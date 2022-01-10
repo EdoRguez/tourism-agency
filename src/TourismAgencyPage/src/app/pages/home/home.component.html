@@ -1,0 +1,320 @@
+<!-- CAROUSEL IMAGES -->
+<ngb-carousel
+    *ngIf="carouselData"
+    [showNavigationArrows]="false"
+    [interval]="4000"
+    [pauseOnHover]="false"
+>
+    <ng-template ngbSlide *ngFor="let data of carouselData">
+        <div class="picsum-img-wrapper">
+            <div
+                [ngStyle]="{ 'background-image': 'url(' + data.image + ')' }"
+                class="home-carousel-image"
+            >
+                <div class="image-gradient"></div>
+            </div>
+        </div>
+        <div class="carousel-caption">
+            <h3>{{ data.title }}</h3>
+            <p>{{ data.description }}</p>
+            <button class="btn-carousel">Saber Más</button>
+        </div>
+    </ng-template>
+</ngb-carousel>
+
+<!-- SERVICES CIRCLES -->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 col-sm-4 offset-sm-2 circle-box-margin">
+            <div class="row box-service-circle">
+                <div class="col-12 col-sm-6 d-flex justify-content-center">
+                    <div class="service-image-circle yate-img"></div>
+                </div>
+                <div
+                    class="col-12 col-sm-6 d-flex flex-column justify-content-center"
+                >
+                    <h4 class="service-section-title">Servicio De</h4>
+                    <h4 class="service-section-title-2">Lancha</h4>
+                    <p class="service-section-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Illo quo id aperiam fugiat, ducimus blanditiis
+                        soluta nihil pariatur dolorem
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4 circle-box-margin">
+            <div class="row box-service-circle">
+                <div class="col-12 col-sm-6 d-flex justify-content-center">
+                    <div class="service-image-circle posada-img"></div>
+                </div>
+                <div
+                    class="col-12 col-sm-6 d-flex flex-column justify-content-center"
+                >
+                    <h4 class="service-section-title">Servicio De</h4>
+                    <h4 class="service-section-title-2">Alojamiento</h4>
+                    <p class="service-section-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Illo quo id aperiam fugiat, ducimus blanditiis
+                        soluta nihil pariatur dolorem
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4 offset-sm-2 circle-box-margin">
+            <div class="row box-service-circle">
+                <div class="col-12 col-sm-6 d-flex justify-content-center">
+                    <div class="service-image-circle entretenimiento-img"></div>
+                </div>
+                <div
+                    class="col-12 col-sm-6 d-flex flex-column justify-content-center"
+                >
+                    <h4 class="service-section-title">Servicio De</h4>
+                    <h4 class="service-section-title-2">Entretenimiento</h4>
+                    <p class="service-section-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Illo quo id aperiam fugiat, ducimus blanditiis
+                        soluta nihil pariatur dolorem
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4 circle-box-margin">
+            <div class="row box-service-circle">
+                <div class="col-12 col-sm-6 d-flex justify-content-center">
+                    <div class="service-image-circle transporte-img"></div>
+                </div>
+                <div
+                    class="col-12 col-sm-6 d-flex flex-column justify-content-center"
+                >
+                    <h4 class="service-section-title">Servicio De</h4>
+                    <h4 class="service-section-title-2">Transporte</h4>
+                    <p class="service-section-text">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Illo quo id aperiam fugiat, ducimus blanditiis
+                        soluta nihil pariatur dolorem
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- WELCOME AND ABOUT US -->
+<div class="about-box">
+    <div class="image-gradient">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <div class="col-12 about-mobile-position">
+                        <h5 class="home-about-title">¡Bienvenido!</h5>
+                        <p class="home-about-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ab tempore dolore minus exercitationem iure
+                            velit nulla, aliquam delectus veniam rem aperiam,
+                            placeat id neque adipisci architecto ut reiciendis!
+                            Numquam, corporis?. Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit. Totam reprehenderit
+                            earum quia placeat unde, magnam necessitatibus at
+                            velit molestias nobis ad pariatur dolorum dolorem,
+                            possimus voluptatum, voluptate beatae rem.
+                            Veritatis.
+                        </p>
+                        <p class="home-about-description">
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Ab tempore dolore minus exercitationem iure
+                            velit nulla, aliquam delectus veniam rem aperiam,
+                            placeat id neque adipisci architecto ut reiciendis!
+                            Numquam, corporis?. Lorem ipsum dolor, sit amet
+                            consectetur adipisicing elit. Totam reprehenderit
+                            earum quia placeat unde, magnam necessitatibus at
+                            velit molestias nobis ad pariatur dolorum dolorem,
+                            possimus voluptatum, voluptate beatae rem.
+                            Veritatis.
+                        </p>
+                        <button class="btn-home-about">Saber Más</button>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <div class="col-12 about-mobile-position">
+                        <h5 class="home-about-title">Acerca de Nosotros</h5>
+                        <p class="home-about-description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Iusto magnam minus, eum repellat nisi aliquid,
+                            hic totam alias praesentium, soluta earum facere et
+                            repudiandae ad a fuga numquam voluptas. Deserunt!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Sunt eligendi enim laudantium minima voluptate
+                            earum, doloremque magni delectus et nobis alias
+                            quaerat odit inventore quidem voluptates.
+                            Aspernatur, quisquam. Voluptates, molestias.
+                        </p>
+                        <p class="home-about-description">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Iusto magnam minus, eum repellat nisi aliquid,
+                            hic totam alias praesentium, soluta earum facere et
+                            repudiandae ad a fuga numquam voluptas. Deserunt!
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Sunt eligendi enim laudantium minima voluptate
+                            earum, doloremque magni delectus et nobis alias
+                            quaerat odit inventore quidem voluptates.
+                            Aspernatur, quisquam. Voluptates, molestias.
+                        </p>
+                        <button class="btn-home-about">Saber Más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TOURIST GUIDE -->
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-12">
+            <h5 class="guide-title">Guía del Turista</h5>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="col-12">
+                <ul class="home-ul">
+                    <li>
+                        <a href="#"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="col-12">
+                <ul class="home-ul">
+                    <li>
+                        <a href="#"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="col-12">
+                <ul class="home-ul">
+                    <li>
+                        <a href="#"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</a
+                        >
+                    </li>
+                    <li>
+                        <a href="#"
+                            >Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit.</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ACTIVITIES IMAGES -->
+<div class="container my-4">
+    <div class="row">
+        <div class="col-12">
+            <h5 class="activities-title">Actividades</h5>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="col-12">
+                <div class="activities-box surf-img">
+                    <div class="activities-image-gradient"></div>
+                    <div class="activities-box-hover">
+                        <p>Surf</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="col-12">
+                <div class="activities-box banana-img">
+                    <div class="activities-image-gradient"></div>
+                    <div class="activities-box-hover">
+                        <p>La Banana</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="col-12">
+                <div class="activities-box comet-img">
+                    <div class="activities-image-gradient"></div>
+                    <div class="activities-box-hover">
+                        <p>Volar Papagayo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="col-12">
+                <div class="activities-box relax-img">
+                    <div class="activities-image-gradient"></div>
+                    <div class="activities-box-hover">
+                        <p>Relajarse</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="col-12">
+                <div class="activities-box music-img">
+                    <div class="activities-image-gradient"></div>
+                    <div class="activities-box-hover">
+                        <p>Música</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="col-12">
+                <div class="activities-box volleyball-img">
+                    <div class="activities-image-gradient"></div>
+                    <div class="activities-box-hover">
+                        <p>Deportes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

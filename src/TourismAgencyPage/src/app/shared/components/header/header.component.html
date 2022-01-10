@@ -1,0 +1,47 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light custom-navbar">
+
+
+  <a class="navbar-brand" href="#">
+    <h1 class="nav-title">Paradise Life</h1>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed">
+    <i class="fa fa-bars color-base" aria-hidden="true"></i>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngbCollapse]="isCollapsed">
+    
+    <ul class="navbar-nav ml-auto">
+      <li ngbDropdown class="d-inline-block mr-3">
+        <button class="btn navbar-element" id="dropdownBasic1" ngbDropdownToggle>Destinos</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem class="dropdown-places-element">Morrocoy</button>
+          <button ngbDropdownItem class="dropdown-places-element">Los Roques</button>
+          <button ngbDropdownItem class="dropdown-places-element">Margarita</button>
+          <button ngbDropdownItem class="dropdown-places-element">La Guaira</button>
+        </div>
+      </li>
+      <li ngbDropdown class="d-inline-block mr-2">
+        <button class="btn navbar-element" id="dropdownBasic2" ngbDropdownToggle>Servicios</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem class="dropdown-places-element">Alojamiento</button>
+          <button ngbDropdownItem class="dropdown-places-element">Transporte</button>
+          <button ngbDropdownItem class="dropdown-places-element">Actividades</button>
+          <button ngbDropdownItem class="dropdown-places-element">Entretenimiento</button>
+        </div>
+      </li>
+    </ul>
+
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link navbar-element" href="#">Guias</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navbar-element" href="#">Premium</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link navbar-element" href="#">Contacto</a>
+      </li>
+    </ul>
+  </div>
+</nav>
