@@ -11,32 +11,36 @@ button.navbar-element {
 }
 
 .nav-title {
-    font-family: 'Great Vibes', cursive;
+    font-family: "Great Vibes", cursive;
     color: #cc0000;
     font-size: 26px;
     margin: 0px;
 }
 
-
 .custom-navbar {
     background-color: white;
     border-bottom: 1px solid #cc0000;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
- .dropdown-places-element {
-     color: #cc0000;
-     text-transform: uppercase;
-     font-family: 'Roboto', sans-serif;
- }
+.dropdown-places-element {
+    color: #cc0000;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+}
 
- .navbar-element {
-     color: #cc0000 !important;
-     text-transform: uppercase;
-     font-family: 'Roboto', sans-serif;
- }
+.dropdown-places-element:active {
+    background-color: #cc0000;
+    color: white;
+}
 
- ::ng-deep .dropdown-menu {
-     border: 1px solid #cc0000;
-     border-radius: 0px;
- }
+.navbar-element {
+    color: #cc0000 !important;
+    text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
+}
+
+::ng-deep .dropdown-menu {
+    border: 1px solid #cc0000;
+    border-radius: 0px;
+}

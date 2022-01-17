@@ -1,0 +1,20 @@
+.slider-box {
+    position: relative;
+}
+
+.slider-label {
+    position: absolute;
+    font-family: "Roboto", sans-serif;
+}
+
+.slider-label-result {
+    position: absolute;
+    right: 0px;
+    font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 990px) {
+    .mobile-margin {
+        margin-top: 15px;
+    }
+}
