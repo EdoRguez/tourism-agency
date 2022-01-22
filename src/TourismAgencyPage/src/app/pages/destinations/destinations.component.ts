@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DestinationsService } from './destinations.service';
 
 @Component({
   selector: 'app-destinations',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DestinationsComponent implements OnInit {
 
-  constructor() { }
+  showMapRight: boolean = false;
+  
+  constructor(private destinationService: DestinationsService) { }
 
   ngOnInit(): void {
+    this.destinationService.showMapAction$.subscribe(
+      (value: boolean) => {
+        this.showMapRight = value;
+      }
+    );
   }
 
 }

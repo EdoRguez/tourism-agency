@@ -1,7 +1,7 @@
 <nav class="navbar sticky-top navbar-expand-lg navbar-light custom-navbar">
 
 
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" [routerLink]="['/']" (click)="isCollapsed = true">
     <h1 class="nav-title">Paradise Life</h1>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed">
@@ -14,10 +14,10 @@
       <li ngbDropdown class="d-inline-block mr-3">
         <button class="btn navbar-element" id="dropdownBasic1" ngbDropdownToggle>Destinos</button>
         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-          <button ngbDropdownItem class="dropdown-places-element" [routerLink]="['destinos']">Morrocoy</button>
-          <button ngbDropdownItem class="dropdown-places-element" [routerLink]="['destinos']">Los Roques</button>
-          <button ngbDropdownItem class="dropdown-places-element" [routerLink]="['destinos']">Margarita</button>
-          <button ngbDropdownItem class="dropdown-places-element" [routerLink]="['destinos']">La Guaira</button>
+          <button ngbDropdownItem class="dropdown-places-element" [routerLink]="['destinos']" (click)="isCollapsed = true">Morrocoy</button>
+          <button ngbDropdownItem class="dropdown-places-element" [routerLink]="['destinos']" (click)="isCollapsed = true">Los Roques</button>
+          <button ngbDropdownItem class="dropdown-places-element" [routerLink]="['destinos']" (click)="isCollapsed = true">Margarita</button>
+          <button ngbDropdownItem class="dropdown-places-element" [routerLink]="['destinos']" (click)="isCollapsed = true">La Guaira</button>
         </div>
       </li>
       <li ngbDropdown class="d-inline-block mr-2">

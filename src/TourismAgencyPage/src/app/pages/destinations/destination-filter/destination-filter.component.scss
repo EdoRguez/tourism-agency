@@ -1,20 +1,21 @@
+.filter-box {
+    box-shadow: 0 1px 4px rgba(41,51,57,.5);
+    padding: 10px;
+    background-color: white;
+}
+
 .slider-box {
     position: relative;
 }
 
 .slider-label {
-    position: absolute;
     font-family: "Roboto", sans-serif;
+    margin: 0px;
 }
 
-.slider-label-result {
-    position: absolute;
-    right: 0px;
-    font-family: "Roboto", sans-serif;
-}
-
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 767px) {
     .mobile-margin {
         margin-top: 15px;
     }
+
 }
