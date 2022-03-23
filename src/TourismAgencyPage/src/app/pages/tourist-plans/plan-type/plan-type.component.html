@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-12 mt-4">
+        <h1 class="plan-type-title animate__animated animate__zoomIn">¿Qué tipo de plan estás buscando?</h1>
+        <p class="plan-type-subtitle animate__animated animate__zoomIn">Tenemos gran variedad de planes que se adaptan a tus necesidades</p>
+    </div>
+
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #familyCircle class="plan-type-circle d-none" (click)="onSelectElement(1)">
+                    <img class="img-fluid" src="assets/images/family.png" >
+                    <h5 class="text-type">Familiar</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #friendsCircle class="plan-type-circle d-none" (click)="onSelectElement(2)">
+                    <img class="img-fluid" src="assets/images/friends.png" >
+                    <h5 class="text-type">Amigos</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #coupleCircle class="plan-type-circle d-none" (click)="onSelectElement(3)">
+                    <img class="img-fluid" src="assets/images/couple.png" >
+                    <h5 class="text-type">Pareja</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -32,8 +32,8 @@
     background-image: url("../../../assets/images/entretenimiento.jpg");
 }
 
-.transporte-img {
-    background-image: url("../../../assets/images/transporte.jpg");
+.comida-img {
+    background-image: url("../../../assets/images/comida.jpg");
 }
 
 .service-section-title {
@@ -182,12 +182,12 @@
     background-image: url("../../../assets/images/surf.jpg");
 }
 
-.banana-img {
-    background-image: url("../../../assets/images/banana.jpg");
+.beach-travel-img {
+    background-image: url("../../../assets/images/beach_travel.png");
 }
 
-.comet-img {
-    background-image: url("../../../assets/images/comet.jpg");
+.fishing-img {
+    background-image: url("../../../assets/images/fishing.jpg");
 }
 
 .relax-img {
@@ -290,5 +290,24 @@
 
     .box-service-circle:hover {
         box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 1000px) {
+    .service-image-circle {
+        height: 100px;
+        width: 100px;
+    }
+
+    .service-section-title {
+        font-size: 16px;
+    }
+
+    .service-section-title-2 {
+        font-size: 16px;
+    }
+
+    .activities-box-hover > p {
+        font-size: 12px;
     }
 }

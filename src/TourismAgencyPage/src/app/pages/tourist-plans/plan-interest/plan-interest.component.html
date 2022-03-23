@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-12 mt-4">
+        <h1 class="plan-type-title animate__animated animate__zoomIn">¿Cuál es tu interés?</h1>
+    </div>
+
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #beachCircle class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(1)">
+                    <img class="img-fluid" src="assets/images/beach.png" >
+                    <h5 class="text-type">Playas</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #natureCircle class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(2)">
+                    <img class="img-fluid" src="assets/images/nature.png" >
+                    <h5 class="text-type">Naturaleza</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #cultureCircle class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(3)">
+                    <img class="img-fluid" src="assets/images/culture.png" >
+                    <h5 class="text-type">Cultura</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 mt-5">
+        <button #returnBtn class="btn btn-main d-none" (click)="onReturn()">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            Regresar
+        </button>
+    </div>
+</div>

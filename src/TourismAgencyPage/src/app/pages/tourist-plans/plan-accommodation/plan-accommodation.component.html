@@ -1,0 +1,67 @@
+<div class="row">
+    <div class="col-12 mt-4">
+        <h1 class="plan-type-title animate__animated animate__zoomIn">¿Tienes dónde llegar?</h1>
+    </div>
+
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #homeCircle class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(1)">
+                    <img class="img-fluid" src="assets/images/home.png" >
+                    <h5 class="text-type">Tengo Alojamiento</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #star2Circle class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(2)">
+                    <img class="img-fluid" src="assets/images/hotel_2.png" >
+                    <h5 class="text-type">Simple</h5>
+                    <h5 class="text-type">10$ - 20$</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #star3Circle class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(3)">
+                    <img class="img-fluid" src="assets/images/hotel_3.png" >
+                    <h5 class="text-type">Medio</h5>
+                    <h5 class="text-type">20$ - 40$</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 offset-sm-2 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #star4Circle class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(4)">
+                    <img class="img-fluid" src="assets/images/hotel_4.png" >
+                    <h5 class="text-type">Lujo</h5>
+                    <h5 class="text-type">40$ - 60$</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #star5Circle class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(5)">
+                    <img class="img-fluid" src="assets/images/hotel_5.png" >
+                    <h5 class="text-type">Élite</h5>
+                    <h5 class="text-type">60$ - 120$</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 mt-5">
+        <button #returnBtn class="btn btn-main d-none" (click)="onReturn()">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            Regresar
+        </button>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="main-box">    
+    <div class="container" [ngSwitch]="formStep">
+        <app-plan-type *ngSwitchCase="0" (changeStep)="onDetectChangeStep($event)"></app-plan-type>
+        <app-plan-interest *ngSwitchCase="1" (changeStep)="onDetectChangeStep($event)"></app-plan-interest>
+        <app-plan-number-people *ngSwitchCase="2" (changeStep)="onDetectChangeStep($event)"></app-plan-number-people>
+        <app-plan-date *ngSwitchCase="3" (changeStep)="onDetectChangeStep($event)"></app-plan-date>
+        <app-plan-accommodation *ngSwitchCase="4" (changeStep)="onDetectChangeStep($event)"></app-plan-accommodation>
+        <app-plan-ship *ngSwitchCase="5" (changeStep)="onDetectChangeStep($event)"></app-plan-ship>
+    </div>
+</div>

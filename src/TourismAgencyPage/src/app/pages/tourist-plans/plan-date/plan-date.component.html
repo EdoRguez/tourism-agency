@@ -1,0 +1,43 @@
+<div class="row">
+    <div class="col-12 mt-4">
+        <h1 class="plan-type-title animate__animated animate__zoomIn">¿Cuándo te esperamos?</h1>
+    </div>
+
+    <div class="col-12 mt-2">
+        <div class="d-flex justify-content-center">
+            <div class="plan-type-circle plan-type-circle-hover">
+                <img class="img-fluid" src="assets/images/date.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 mt-2">
+        <div class="d-flex justify-content-center">
+            <ngb-datepicker #dp [(ngModel)]="model" (dateSelect)="onDateSelection($event)" [displayMonths]="1" [dayTemplate]="t" outsideDays="hidden">
+            </ngb-datepicker>
+            <ng-template #t let-date let-focused="focused">
+                <span class="custom-day"
+                        [class.focused]="focused"
+                        [class.range]="isRange(date)"
+                        [class.faded]="isHovered(date) || isInside(date)"
+                        (mouseenter)="hoveredDate = date"
+                        (mouseleave)="hoveredDate = null">
+                    {{ date.day }}
+                </span>
+            </ng-template>
+        </div>
+    </div>
+
+    <div class="col-12 mt-5">
+        <div class="d-flex justify-content-between">
+            <button #returnBtn class="btn btn-main d-none" (click)="onReturn()">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                Regresar
+            </button>
+            <button *ngIf="(fromDate || toDate) && showNextBtn" class="btn btn-main" (click)="onNext()">
+                Siguiente
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+</div>

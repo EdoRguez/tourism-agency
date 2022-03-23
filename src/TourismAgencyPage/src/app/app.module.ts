@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { NgbModule, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HeaderComponent } from './shared/components/header/header.component';
+import { TouristPlansModule } from './pages/tourist-plans/tourist-plans.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HeaderComponent } from './shared/components/header/header.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     NgbModule,
-    NgbDropdownModule
+    NgbDropdownModule,
+    TouristPlansModule
   ],
   providers: [],
   bootstrap: [AppComponent]

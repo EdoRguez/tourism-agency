@@ -14,6 +14,13 @@ const routes: Routes = [
                 (m) => m.DestinationsModule
             ),
     },
+    {
+        path: 'planes',
+        loadChildren: () =>
+            import('./pages/tourist-plans/tourist-plans.module').then(
+                (m) => m.TouristPlansModule
+            ),
+    }
 ];
 
 @NgModule({

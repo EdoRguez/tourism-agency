@@ -2,7 +2,7 @@
 
 
   <a class="navbar-brand" [routerLink]="['/']" (click)="isCollapsed = true">
-    <h1 class="nav-title">Paradise Life</h1>
+    <h1 class="nav-title">Viaja Venezuela</h1>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed">
     <i class="fa fa-bars color-base" aria-hidden="true"></i>
@@ -37,7 +37,7 @@
         <a class="nav-link navbar-element" href="#">Guias</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link navbar-element" href="#">Premium</a>
+        <a class="nav-link navbar-element" [routerLink]="['planes']">Planes</a>
       </li>
       <li class="nav-item">
         <a class="nav-link navbar-element" href="#">Contacto</a>
