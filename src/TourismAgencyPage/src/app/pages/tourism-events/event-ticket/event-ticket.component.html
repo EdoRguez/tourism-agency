@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-12 mt-4">
+        <h1 class="plan-type-title animate__animated animate__zoomIn">Entradas</h1>
+    </div>
+
+    <div class="col-12 col-sm-4 offset-sm-2 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #vipCircle class="plan-type-circle d-none" (click)="onSelectElement(1)">
+                    <img class="img-fluid" src="assets/images/ticket_vip.png" >
+                    <h5 class="text-type">VIP</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #generalCircle class="plan-type-circle d-none" (click)="onSelectElement(2)">
+                    <img class="img-fluid" src="assets/images/ticket_general.png" >
+                    <h5 class="text-type">General</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 mt-5">
+        <div class="d-flex justify-content-between">
+            <button #returnBtn class="btn btn-main d-none" (click)="onReturn()">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                Regresar
+            </button>
+        </div>
+    </div>
+</div>

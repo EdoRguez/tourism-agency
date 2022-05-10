@@ -1,0 +1,48 @@
+<div class="row">
+    <div class="col-12 mt-4">
+        <h1 class="plan-type-title animate__animated animate__zoomIn">Alojamiento</h1>
+    </div>
+
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #castleCircle class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(1)">
+                    <img class="img-fluid" src="assets/images/castle.png" >
+                    <h5 class="text-type">Élite</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #bigHouseCircle class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(2)">
+                    <img class="img-fluid" src="assets/images/big_house.png" >
+                    <h5 class="text-type">Premium</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #homeCircle class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(3)">
+                    <img class="img-fluid" src="assets/images/home.png" >
+                    <h5 class="text-type">Estándar</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mt-5 d-none" #alreadyLodging>
+        <div class="d-flex justify-content-center">
+            <span class="alreadyLodgingText" (click)="onSelectElement(4)">Tengo Alojamiento</span>
+        </div>
+    </div>
+
+    <div class="col-12 mt-5">
+        <button #returnBtn class="btn btn-main d-none" (click)="onReturn()">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            Regresar
+        </button>
+    </div>
+</div>

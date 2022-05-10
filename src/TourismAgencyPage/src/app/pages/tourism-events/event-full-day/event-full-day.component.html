@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-12 mt-4">
+        <h1 class="plan-type-title animate__animated animate__zoomIn">Sábado - Full Day</h1>
+    </div>
+
+    <div class="col-12 col-sm-4 offset-sm-2 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #plan1 class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(1)">
+                    <img class="img-fluid" src="assets/images/sombrero_icon.png" >
+                    <h5 class="text-type">Sombrero</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-4 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #plan2 class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(2)">
+                    <img class="img-fluid" src="assets/images/punta_brava_icon.png" >
+                    <h5 class="text-type">Punta Brava</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mt-5 d-none" #dontLike>
+        <div class="d-flex justify-content-center">
+            <span class="alreadyLodgingText" (click)="onSelectElement(3)">No me gusta la playa</span>
+        </div>
+    </div>
+
+    <div class="col-12 mt-5">
+        <button #returnBtn class="btn btn-main d-none" (click)="onReturn()">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            Regresar
+        </button>
+    </div>
+</div>

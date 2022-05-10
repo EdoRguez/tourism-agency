@@ -8,6 +8,7 @@ import { NgbModule, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HeaderComponent } from './shared/components/header/header.component';
 import { TouristPlansModule } from './pages/tourist-plans/tourist-plans.module';
+import { TourismEventsModule } from './pages/tourism-events/tourism-events.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { TouristPlansModule } from './pages/tourist-plans/tourist-plans.module';
     BrowserAnimationsModule,
     NgbModule,
     NgbDropdownModule,
-    TouristPlansModule
+    TouristPlansModule,
+    TourismEventsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

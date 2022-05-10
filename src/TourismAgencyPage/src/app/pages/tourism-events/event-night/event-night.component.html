@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="col-12 mt-4">
+        <h1 class="plan-type-title animate__animated animate__zoomIn">Sábado - Noche</h1>
+    </div>
+
+    <div class="col-12 mt-5">
+        <div class="col-12">
+            <div class="d-flex justify-content-center">
+                <div #dinnerNight class="plan-type-circle plan-type-circle-hover d-none" (click)="onSelectElement(1)">
+                    <img class="img-fluid" src="assets/images/dinner_night.png" >
+                    <h5 class="text-type">Cena</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mt-5 d-none" #dontLike>
+        <div class="d-flex justify-content-center">
+            <span class="alreadyLodgingText" (click)="onSelectElement(2)">No me gusta la cena</span>
+        </div>
+    </div>
+
+    <div class="col-12 mt-5">
+        <button #returnBtn class="btn btn-main d-none" (click)="onReturn()">
+            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+            Regresar
+        </button>
+    </div>
+</div>

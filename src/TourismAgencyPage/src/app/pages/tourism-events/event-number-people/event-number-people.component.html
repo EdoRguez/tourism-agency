@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-12 mt-4">
+        <h1 class="plan-type-title animate__animated animate__zoomIn">¿Cuántos son?</h1>
+    </div>
+
+    <div class="col-12 mt-2">
+        <div class="d-flex justify-content-center">
+            <div class="plan-type-circle plan-type-circle-hover">
+                <img class="img-fluid" src="assets/images/people.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 mt-2">
+        <div class="d-flex justify-content-center">
+                <div class="form-group d-flex align-items-center">
+                    <span class="question-people">Personas: </span>
+                    <select [(ngModel)]="selectedNumberPeople" class="form-control form-control-sm select-main">
+                        <option value="" selected>-</option>
+                        <option *ngFor="let numberPerson of arrayNumberPeople" [value]="numberPerson">{{
+                            numberPerson }}</option>
+                    </select>
+                </div>
+
+        </div>
+    </div>
+
+    <div class="col-12 mt-5">
+        <div class="d-flex justify-content-between">
+            <button #returnBtn class="btn btn-main d-none" (click)="onReturn()">
+                <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                Regresar
+            </button>
+            <button *ngIf="selectedNumberPeople && showNextBtn" class="btn btn-main" (click)="onNext()">
+                Siguiente
+                <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+</div>

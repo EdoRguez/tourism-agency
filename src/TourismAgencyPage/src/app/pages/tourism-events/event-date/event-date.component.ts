@@ -1,5 +1,6 @@
 import { Component, ElementRef, EventEmitter, Injectable, OnInit, Output, Renderer2, ViewChild } from '@angular/core';
-import {NgbDate, NgbCalendar, NgbDatepickerI18n, NgbDateStruct} from '@ng-bootstrap/ng-bootstrap';
+import { NgbCalendar, NgbDate, NgbDatepickerI18n, NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
+import { TourismEventsService } from '../services/tourism-events.service';
 
 const I18N_VALUES: any = {
   'es': {
@@ -30,13 +31,13 @@ export class CustomDatepickerI18n extends NgbDatepickerI18n {
 }
 
 @Component({
-  selector: 'app-plan-date',
-  templateUrl: './plan-date.component.html',
-  styleUrls: ['./plan-date.component.scss'],
+  selector: 'app-event-date',
+  templateUrl: './event-date.component.html',
+  styleUrls: ['./event-date.component.scss'],
   providers:
       [I18n, {provide: NgbDatepickerI18n, useClass: CustomDatepickerI18n}]
 })
-export class PlanDateComponent implements OnInit {
+export class EventDateComponent implements OnInit {
 
   @Output() changeStep = new EventEmitter<boolean>();
 
@@ -51,7 +52,8 @@ export class PlanDateComponent implements OnInit {
   showNextBtn: boolean = false;
 
   constructor(private renderer: Renderer2,
-              calendar: NgbCalendar) { 
+              calendar: NgbCalendar,
+              private tourismEventsService: TourismEventsService) { 
     //this.fromDate = calendar.getToday();
     //this.toDate = calendar.getNext(calendar.getToday(), 'd', 10);
   }
@@ -61,6 +63,9 @@ export class PlanDateComponent implements OnInit {
   }
 
   onNext(): void  {
+    this.tourismEventsService.selectedOptions.initDate = new Date(this.fromDate?.year as number, this.fromDate?.month as number - 1, this.fromDate?.day as number);
+    this.tourismEventsService.selectedOptions.endDate = new Date(this.toDate?.year as number, this.toDate?.month as number - 1, this.toDate?.day as number);
+
     this.changeStep.next(true);
   }
 

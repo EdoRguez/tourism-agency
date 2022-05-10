@@ -1,0 +1,73 @@
+.plan-type-title {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    color: black;
+    text-align: center;
+}
+
+.plan-type-subtitle {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    color: black;
+    text-align: center;
+}
+
+.plan-type-circle {
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid #cc0000;
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 0 0 3px rgba(204, 0, 0, .6);
+    cursor: pointer;
+    transition: .4s;
+}
+
+.plan-type-circle:hover {
+    transform: scale(1.06);
+}
+
+.animation-zoomIn {
+    animation: zoomIn;
+    animation-duration: 1.2s;
+}
+
+.text-type {
+    font-family: "Roboto", sans-serif;
+    margin: 0px;
+    font-size: 18px;
+    color: black;
+}
+
+.hide-element {
+    display: none;
+}
+
+.bounce-exit-animation {
+    animation: bounceOut;
+    animation-duration: .7s;
+    animation-iteration-count: infinite;
+}
+
+.alreadyLodgingText {
+    font-family: "Roboto", sans-serif;
+}
+
+.alreadyLodgingText:hover {
+    text-decoration: underline;
+    color: #cc0000;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1000px) {
+    .plan-type-circle {
+        height: 150px;
+        width: 150px;
+    }
+
+    .text-type {
+        font-size: 15px;
+    }
+}

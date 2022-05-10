@@ -20,7 +20,14 @@ const routes: Routes = [
             import('./pages/tourist-plans/tourist-plans.module').then(
                 (m) => m.TouristPlansModule
             ),
-    }
+    },
+    {
+        path: 'eventos',
+        loadChildren: () =>
+            import('./pages/tourism-events/tourism-events.module').then(
+                (m) => m.TourismEventsModule
+            ),
+    },
 ];
 
 @NgModule({

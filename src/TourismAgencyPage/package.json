@@ -26,6 +26,7 @@
     "aos": "^2.3.4",
     "bootstrap": "^4.6.1",
     "font-awesome": "^4.7.0",
+    "moment": "^2.29.3",
     "ng-gallery": "^6.0.0",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",

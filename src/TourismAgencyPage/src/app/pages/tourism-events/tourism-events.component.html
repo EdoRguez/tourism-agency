@@ -1,0 +1,12 @@
+<div class="main-box">    
+    <div class="container" [ngSwitch]="formStep">
+        <app-event-type *ngSwitchCase="0" (changeStep)="onDetectChangeStep($event)"></app-event-type>
+        <app-event-number-people *ngSwitchCase="1" (changeStep)="onDetectChangeStep($event)"></app-event-number-people>
+        <app-event-ticket *ngSwitchCase="2" (changeStep)="onDetectChangeStep($event)"></app-event-ticket>
+        <app-event-lodging *ngSwitchCase="3" (changeStep)="onDetectChangeStep($event)"></app-event-lodging>
+        <app-event-date *ngSwitchCase="4" (changeStep)="onDetectChangeStep($event)"></app-event-date>
+        <app-event-full-day *ngSwitchCase="5" (changeStep)="onDetectChangeStep($event)"></app-event-full-day>
+        <app-event-night *ngSwitchCase="6" (changeStep)="onDetectChangeStep($event)"></app-event-night>
+        <app-event-result *ngSwitchCase="7" (changeStep)="onDetectChangeStep($event)"></app-event-result>
+    </div>
+</div>

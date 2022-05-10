@@ -1,0 +1,65 @@
+<div class="row">
+    <div class="col-12 col-md-6 pt-5">
+        <div class="col-12">
+            <div class="box-result">
+                <table class="w-100">
+                    <tr>
+                        <td class="result-title">Paquete:</td>
+                        <td>{{ selectedResults.type }}</td>
+                    </tr>
+                    <tr>
+                        <td class="result-title">Número de Personas:</td>
+                        <td>{{ selectedResults.numberPeople }}</td>
+                    </tr>
+                    <tr>
+                        <td class="result-title">Entrada:</td>
+                        <td>{{ selectedResults.ticket }}</td>
+                    </tr>
+                    <tr>
+                        <td class="result-title">Alojamiento:</td>
+                        <td>{{ selectedResults.logding }}</td>
+                    </tr>
+                    <tr *ngIf="resultDates">
+                        <td class="result-title">Fecha:</td>
+                        <td>{{ resultDates.initDate }} - {{ resultDates.endDate }}</td>
+                    </tr>
+                    <tr>
+                        <td class="result-title">Fullday:</td>
+                        <td>{{ selectedResults.fullday }}</td>
+                    </tr>
+                    <tr>
+                        <td class="result-title">Cena:</td>
+                        <td>{{ selectedResults.night }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-6 pt-5">
+        <div class="col-12">
+            <form>
+                <div class="form-group row">
+                    <label class="col-4 col-form-label text-right">Nombre y Apellido:</label>
+                    <div class="col-8">
+                        <input type="test" class="form-control input-base">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-4 col-form-label text-right">Correo:</label>
+                    <div class="col-8">
+                        <input type="email" class="form-control input-base">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-4 col-form-label text-right">Teléfono:</label>
+                    <div class="col-8">
+                        <input type="text" class="form-control input-base">
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-main w-100">Reservar</button>
+            </form>
+        </div>
+    </div>
+</div>
