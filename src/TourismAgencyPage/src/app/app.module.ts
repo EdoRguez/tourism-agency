@@ -9,6 +9,7 @@ import { NgbModule, NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { TouristPlansModule } from './pages/tourist-plans/tourist-plans.module';
 import { TourismEventsModule } from './pages/tourism-events/tourism-events.module';
+import { BoatsModule } from './pages/boats/boats.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TourismEventsModule } from './pages/tourism-events/tourism-events.modul
     NgbDropdownModule,
     TouristPlansModule,
     TourismEventsModule,
+    BoatsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

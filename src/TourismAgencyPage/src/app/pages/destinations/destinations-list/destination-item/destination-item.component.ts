@@ -29,11 +29,13 @@ export class DestinationItemComponent implements OnInit {
   }
 
   onToggleMap(): void {
+    this.destinationService.mapUrl = this.destination.googleMapLocation;
     this.isMapOpened = !this.isMapOpened;
     this.destinationService.toggleMap(this.isMapOpened);
   }
 
   onToggleMapMobile(): void {
+    this.destinationService.mapUrl = this.destination.googleMapLocation;
     const modalRef = this.modalService.open(DestinationMapModalComponent);
   }
 

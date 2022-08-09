@@ -1,0 +1,53 @@
+<form class="filter-box">
+    <div class="row">
+        <div class="col-12 col-md-4">
+            <div class="form-group">
+                <div class="inner-addon left-addon">
+                    <i class="fa fa-search color-base" aria-hidden="true"></i>
+                    <input type="text" class="form-control input-base" placeholder="Nombre" />
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="form-group" style="background-color: orange;">
+                <div class="inner-addon left-addon">
+                    <i class="fas fa-map-marker-alt color-base"></i>
+                    <select class="custom-select input-base">
+                        <option selected>Destino</option>
+                        <option value="1">Morrocoy</option>
+                        <option value="2">Los Roques</option>
+                        <option value="3">Margarita</option>
+                        <option value="4">La Guaira</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="btn-group w-100" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-main">Todos</button>
+                <button type="button" class="btn btn-main-unselected">Hotel</button>
+                <button type="button" class="btn btn-main-unselected">Posada</button>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+            <div class="form-group slider-box mobile-margin">
+                    <label class="slider-label">Precio mínimo por noche: <b>1.000,00 USD</b></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="form-group slider-box">
+                <label class="slider-label">Precio máximo por noche: <b>1.000,00 USD</b></label>
+                <div class="slidecontainer">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <button type="button" class="btn btn-main w-100 mt-2">Buscar</button>
+        </div>
+    </div>
+</form>

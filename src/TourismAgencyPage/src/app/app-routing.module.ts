@@ -15,6 +15,13 @@ const routes: Routes = [
             ),
     },
     {
+        path: 'lanchas',
+        loadChildren: () =>
+            import('./pages/boats/boats.module').then(
+                (m) => m.BoatsModule
+            ),
+    },
+    {
         path: 'planes',
         loadChildren: () =>
             import('./pages/tourist-plans/tourist-plans.module').then(

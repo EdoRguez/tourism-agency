@@ -6,6 +6,8 @@ import { Observable, Subject } from 'rxjs';
 })
 export class DestinationsService {
 
+  mapUrl: string = '';
+
   private showMapSubject = new Subject<boolean>();
 
   get showMapAction$(): Observable<boolean> {

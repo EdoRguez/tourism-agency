@@ -11,8 +11,8 @@ import { DestinationFilterComponent } from './destination-filter/destination-fil
 import { DestinationsListComponent } from './destinations-list/destinations-list.component';
 import { DestinationItemComponent } from './destinations-list/destination-item/destination-item.component';
 import { DestinationMapComponent } from './destination-map/destination-map.component';
-import { LoaderComponent } from 'src/app/shared/components/loader/loader.component';
 import { DestinationMapModalComponent } from './destination-map-modal/destination-map-modal.component';
+import { LoaderModule } from 'src/app/shared/modules/loader/loader.module';
 
 
 @NgModule({
@@ -22,14 +22,14 @@ import { DestinationMapModalComponent } from './destination-map-modal/destinatio
     DestinationsListComponent,
     DestinationItemComponent,
     DestinationMapComponent,
-    LoaderComponent,
     DestinationMapModalComponent
   ],
   imports: [
     CommonModule,
     DestinationsRoutingModule,
     GalleryModule,
-    NgbNavModule
+    NgbNavModule,
+    LoaderModule
   ]
 })
 export class DestinationsModule { }

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TourismEventsComponent implements OnInit {
 
-  formStep: number = 7;
+  formStep: number = 0;
 
   constructor() { }
 
