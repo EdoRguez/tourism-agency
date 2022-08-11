@@ -14,7 +14,6 @@ export class DestinationItemComponent implements OnInit {
   @Input() destination: any;
 
   isCardOpened: boolean = false;
-  isMapOpened: boolean = false;
   
   active = 1;
   images: GalleryItem[] = [];
@@ -30,8 +29,12 @@ export class DestinationItemComponent implements OnInit {
 
   onToggleMap(): void {
     this.destinationService.mapUrl = this.destination.googleMapLocation;
-    this.isMapOpened = !this.isMapOpened;
-    this.destinationService.toggleMap(this.isMapOpened);
+    window.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
+    this.destinationService.toggleMap(true);
   }
 
   onToggleMapMobile(): void {

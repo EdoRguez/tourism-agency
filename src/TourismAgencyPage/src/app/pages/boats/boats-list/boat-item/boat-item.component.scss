@@ -1,11 +1,11 @@
-.destination-box {
+.boat-box {
     margin-top: 15px;
     box-shadow: 0 1px 4px rgba(41,51,57,.5);
     transition: .3s;
     background-color: white;
 }
 
-.destination-box:hover {
+.boat-box:hover {
     transform: scale(1.005);
     cursor: pointer;
 }
@@ -20,10 +20,10 @@
 }
 
 .card-body-title,
-.card-body-destination,
+.card-body-boat,
 .card-body-type,
-.card-body-services-title,
-.card-body-services-description,
+.card-body-equipmets-title,
+.card-body-equipmets-description,
 .card-body-price-title,
 .card-body-price-description {
     font-family: "Roboto", sans-serif;
@@ -35,20 +35,21 @@
     font-weight: bold;
 }
 
-.card-body-destination,
+.card-body-boat,
 .card-body-type {
     padding-left: 5px;
     font-size: 14px;
 }
 
-.card-body-services-title {
+.card-body-equipmets-title {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 10px;
 }
 
-.card-body-services-description {
+.card-body-equipmets-description {
     font-size: 14px;
+    text-align: center;
 }
 
 .card-body-left {
@@ -99,7 +100,7 @@
         display: none;
     }
 
-    .card-body-services-description {
+    .card-body-equipmets-description {
         font-size: 10px;
     }
 

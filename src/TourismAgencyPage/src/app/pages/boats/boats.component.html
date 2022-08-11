@@ -1,18 +1,18 @@
-<div class="main-box-destinations">
-    <div class="container">
+<div class="main-box-boats">
+    <!-- <div class="container">
         <div class="row">
             <div class="col-12 mt-2">
                 <app-boat-filter></app-boat-filter>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div [ngClass]="{'container-fluid': showMapRight, 'container': !showMapRight}">
         <div class="row">
             <div class="col-12" [ngClass]="{'col-md-8': showMapRight, 'col-md-12': !showMapRight}">
                 <app-boats-list></app-boats-list>
             </div>
-            <div *ngIf="showMapRight" class="col-12 col-md-4 parent-destination-map">
+            <div *ngIf="showMapRight" class="col-12 col-md-4 parent-boats-map">
                 <app-boat-map></app-boat-map>
             </div>
         </div>

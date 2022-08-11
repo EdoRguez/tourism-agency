@@ -15,7 +15,11 @@ export class DestinationsComponent implements OnInit {
   ngOnInit(): void {
     this.destinationService.showMapAction$.subscribe(
       (value: boolean) => {
-        this.showMapRight = value;
+        this.showMapRight = false;
+
+        setTimeout(() => {
+          this.showMapRight = value;
+        }, 1);
       }
     );
   }
