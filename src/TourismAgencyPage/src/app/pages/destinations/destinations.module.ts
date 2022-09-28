@@ -13,6 +13,8 @@ import { DestinationItemComponent } from './destinations-list/destination-item/d
 import { DestinationMapComponent } from './destination-map/destination-map.component';
 import { DestinationMapModalComponent } from './destination-map-modal/destination-map-modal.component';
 import { LoaderModule } from 'src/app/shared/modules/loader/loader.module';
+import { RouterModule } from '@angular/router';
+import { DestinationComponent } from './destination/destination.component';
 
 
 @NgModule({
@@ -22,14 +24,16 @@ import { LoaderModule } from 'src/app/shared/modules/loader/loader.module';
     DestinationsListComponent,
     DestinationItemComponent,
     DestinationMapComponent,
-    DestinationMapModalComponent
+    DestinationMapModalComponent,
+    DestinationComponent
   ],
   imports: [
     CommonModule,
     DestinationsRoutingModule,
     GalleryModule,
     NgbNavModule,
-    LoaderModule
+    LoaderModule,
+    RouterModule
   ]
 })
 export class DestinationsModule { }

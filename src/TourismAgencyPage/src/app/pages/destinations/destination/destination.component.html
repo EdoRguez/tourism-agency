@@ -1,0 +1,65 @@
+<div class="main-box-destinations" *ngIf="destination">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div class="main-information-box">
+                    <button class="btn btn-main" [routerLink]="['..']">
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                        <span class="ml-1">Regresar</span>
+                    </button>
+                    <div *ngIf="images.length > 0">
+                        <gallery
+                            [items]="images"
+                            thumbPosition="bottom"
+                        ></gallery>
+                    </div>
+
+                    <div class="details-navbar">
+                        <ul class="list-details-navbar">
+                            <li class="list-element-1" (click)="scroll(resume)">Resumen</li>
+                            <li class="list-element-2" (click)="scroll(resume)">Habitaciones</li>
+                            <li class="list-element-3" (click)="scroll(resume)">Ubicación</li>
+                            <li class="list-element-4" (click)="scroll(resume)">Servicios</li>
+                            <hr class="nav-line">
+                        </ul>
+                    </div>
+
+                    
+                    <div class="row mt-5" #resume>
+                        <div class="col-12 col-sm-7">
+                            <h5 class="destination-title">{{ destination.name }}</h5>
+                        </div>
+                        <div class="col-12 col-sm-5">
+                            <app-destination-map></app-destination-map>
+                        </div>
+                    </div>
+
+                    <br>
+                    <br><br><br>
+                    <br>
+                    <br><br><br>
+                    <br>
+                    <br><br><br>
+                    <br>
+                    <br><br><br>
+                    <br>
+                    <br><br><br>
+                    <br>
+                    <br><br><br>
+                    <br>
+                    <br><br><br>
+                    <br>
+                    <br><br><br>
+                    <br>
+                    <br><br><br>
+                    <br>
+                    <br><br><br>
+                    <br>
+                    <br><br><br>
+                    <br>
+                    <br><br><br>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

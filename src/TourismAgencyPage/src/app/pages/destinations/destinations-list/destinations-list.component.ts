@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DestinationsService } from '../destinations.service';
 
 @Component({
   selector: 'app-destinations-list',
@@ -9,156 +10,14 @@ export class DestinationsListComponent implements OnInit {
 
   destinations: any[] = [];
 
-  constructor() { }
+  constructor(private _destinationsService: DestinationsService) { }
 
   ngOnInit(): void {
-    this.destinations = [
-      {
-        id: 1,
-        name: 'Posada Palma Dorada',
-        description: 'Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi. Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio. Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget neque. Phasellus nec tortor vel tellus pulvinar feugiat.',
-        type: 'Posada',
-        imageUrl: 'assets/images/posada_palma_dorada/palma_1.jpg',
-        basePrice: 99.99,
-        destination: 'Morrocoy',
-        googleMapLocation: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13183.67209523176!2d-68.3251465870704!3d10.770711350134864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e810e16b5f16de1%3A0xc9648f7d383590b9!2sPosada%20PALMA%20DORADA!5e0!3m2!1sen!2sve!4v1660008913950!5m2!1sen!2sve',
-        services: [
-          { type: 'Wifi', iconClass: 'fa fa-wifi'},
-          { type: 'Piscina', iconClass: 'fas fa-swimming-pool'},
-          { type: 'Mascotas', iconClass: 'fas fa-dog'},
-          { type: 'TV', iconClass: 'fas fa-tv'},
-          { type: 'Restaurante', iconClass: 'fas fa-utensils'},
-          { type: 'Spa', iconClass: 'fas fa-spa'},
-          { type: 'Bar', iconClass: 'fas fa-glass-martini-alt'},
-          { type: 'Playa', iconClass: 'fas fa-umbrella-beach'},
-          { type: 'Aire acondicionado', iconClass: 'fas fa-snowflake'},
-          { type: 'Estacionamiento', iconClass: 'fas fa-parking'},
-          { type: 'Seguridad', iconClass: 'far fa-eye'},
-          { type: 'Pago Sin Efectivo', iconClass: 'far fa-credit-card'},
-          { type: 'Lavandería', iconClass: 'fas fa-soap'},
-          { type: 'Servicio Limpieza', iconClass: 'fas fa-broom'},
-          { type: 'Sombrillas', iconClass: 'fas fa-umbrella-beach'},
-          { type: 'Baño', iconClass: 'fas fa-bath'},
-          { type: 'Escritorio', iconClass: 'fas fa-pen-fancy'},
-          { type: 'Balcón y ventana', iconClass: 'far fa-window-maximize'},
-          { type: 'Teléfono', iconClass: 'fas fa-phone'},
-          { type: 'Caja Fuerte', iconClass: 'fas fa-toolbox'},
-        ],
-        imagesUrl: [
-          'assets/images/posada_palma_dorada/palma_1.jpg',
-          'assets/images/posada_palma_dorada/palma_2.JPG',
-          'assets/images/posada_palma_dorada/palma_3.JPG',
-          'assets/images/posada_palma_dorada/palma_4.JPG',
-          'assets/images/posada_palma_dorada/palma_5.JPG',
-          'assets/images/posada_palma_dorada/palma_6.JPG',
-          'assets/images/posada_palma_dorada/palma_7.JPG',
-          'assets/images/posada_palma_dorada/palma_8.JPG',
-          'assets/images/posada_palma_dorada/palma_9.JPG',
-          'assets/images/posada_palma_dorada/palma_10.JPG',
-          'assets/images/posada_palma_dorada/palma_11.JPG',
-          'assets/images/posada_palma_dorada/palma_12.JPG',
-          'assets/images/posada_palma_dorada/palma_13.JPG',
-          'assets/images/posada_palma_dorada/palma_14.JPG',
-          'assets/images/posada_palma_dorada/palma_15.JPG',
-          'assets/images/posada_palma_dorada/palma_16.JPG',
-          'assets/images/posada_palma_dorada/palma_17.JPG',
-          'assets/images/posada_palma_dorada/palma_18.JPG',
-          'assets/images/posada_palma_dorada/palma_19.JPG',
-          'assets/images/posada_palma_dorada/palma_20.JPG',
-          'assets/images/posada_palma_dorada/palma_21.JPG',
-          'assets/images/posada_palma_dorada/palma_22.JPG',
-          
-        ]
-      },
-      {
-        id: 2,
-        name: 'Hotel Posada Los Juanes',
-        description: 'Raw denim you probably havent heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.',
-        type: 'Hotel',
-        imageUrl: 'assets/images/posada_los_juanes/juanes_1.JPG',
-        basePrice: 99.99,
-        destination: 'Morrocoy',
-        googleMapLocation: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.547456590475!2d-68.3300465852124!3d10.769318062269743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e810fd40c971ec9%3A0x78b23e82aed63f0b!2sHotel%20Y%20Posada%20Los%20Juanes!5e0!3m2!1sen!2sve!4v1660009010301!5m2!1sen!2sve',
-        services: [
-          { type: 'Wifi', iconClass: 'fa fa-wifi'},
-          { type: 'Piscina', iconClass: 'fas fa-swimming-pool'},
-          { type: 'TV', iconClass: 'fas fa-tv'},
-          { type: 'Teléfono', iconClass: 'fas fa-phone'},
-          { type: 'Seguridad', iconClass: 'far fa-eye'},
-          { type: 'Aire acondicionado', iconClass: 'fas fa-snowflake'},
-          { type: 'Estacionamiento', iconClass: 'fas fa-parking'},
-          { type: 'Pago Sin Efectivo', iconClass: 'far fa-credit-card'},
-          { type: 'Servicio Limpieza', iconClass: 'fas fa-broom'},
-          { type: 'Baño', iconClass: 'fas fa-bath'},
-          { type: 'Balcón y ventana', iconClass: 'far fa-window-maximize'}
-        ],
-        imagesUrl: [
-          'assets/images/posada_los_juanes/juanes_1.JPG',
-          'assets/images/posada_los_juanes/juanes_2.JPG',
-          'assets/images/posada_los_juanes/juanes_3.JPG',
-          'assets/images/posada_los_juanes/juanes_4.JPG',
-          'assets/images/posada_los_juanes/juanes_5.JPG',
-          'assets/images/posada_los_juanes/juanes_6.JPG',
-          'assets/images/posada_los_juanes/juanes_7.JPG',
-          'assets/images/posada_los_juanes/juanes_8.JPG',
-          'assets/images/posada_los_juanes/juanes_9.JPG',
-          'assets/images/posada_los_juanes/juanes_10.JPG',
-          'assets/images/posada_los_juanes/juanes_11.JPG',
-          'assets/images/posada_los_juanes/juanes_12.JPG',
-          'assets/images/posada_los_juanes/juanes_13.JPG',
-          'assets/images/posada_los_juanes/juanes_14.JPG',
-          'assets/images/posada_los_juanes/juanes_15.JPG',
-          'assets/images/posada_los_juanes/juanes_16.JPG',
-          'assets/images/posada_los_juanes/juanes_17.JPG',
-          'assets/images/posada_los_juanes/juanes_18.JPG',
-          'assets/images/posada_los_juanes/juanes_19.JPG',
-          'assets/images/posada_los_juanes/juanes_20.JPG',
-          'assets/images/posada_los_juanes/juanes_21.JPG',
-          
-        ]
-      },
-      {
-        id: 3,
-        name: 'Posada Perla Negra',
-        description: 'Raw denim you probably havent heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.',
-        type: 'Posada',
-        imageUrl: 'assets/images/posada_perla_negra/perla_negra_1.JPG',
-        basePrice: 99.99,
-        destination: 'Morrocoy',
-        googleMapLocation: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4797.418305963242!2d-68.3215760121235!3d10.789241567703225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e810fbb3024f64b%3A0x32d99b45d0860ff6!2sposada%20perla%20negra!5e0!3m2!1sen!2sve!4v1660009085304!5m2!1sen!2sve',
-        services: [
-          { type: 'Wifi', iconClass: 'fa fa-wifi'},
-          { type: 'TV', iconClass: 'fas fa-tv'},
-          { type: 'Baño', iconClass: 'fas fa-bath'},
-          { type: 'Seguridad', iconClass: 'far fa-eye'},
-          { type: 'Lavandería', iconClass: 'fas fa-soap'},
-          { type: 'Estacionamiento', iconClass: 'fas fa-parking'},
-          { type: 'Aire acondicionado', iconClass: 'fas fa-snowflake'},
-        ],
-        imagesUrl: [
-          'assets/images/posada_perla_negra/perla_negra_1.JPG',
-          'assets/images/posada_perla_negra/perla_negra_2.JPG',
-          'assets/images/posada_perla_negra/perla_negra_3.JPG',
-          'assets/images/posada_perla_negra/perla_negra_4.JPG',
-          'assets/images/posada_perla_negra/perla_negra_5.JPG',
-          'assets/images/posada_perla_negra/perla_negra_6.JPG',
-          'assets/images/posada_perla_negra/perla_negra_7.JPG',
-          'assets/images/posada_perla_negra/perla_negra_8.JPG',
-          'assets/images/posada_perla_negra/perla_negra_9.JPG',
-          'assets/images/posada_perla_negra/perla_negra_10.JPG',
-          'assets/images/posada_perla_negra/perla_negra_11.JPG',
-          'assets/images/posada_perla_negra/perla_negra_12.JPG',
-          'assets/images/posada_perla_negra/perla_negra_13.JPG',
-          'assets/images/posada_perla_negra/perla_negra_14.JPG',
-          'assets/images/posada_perla_negra/perla_negra_15.JPG',
-          'assets/images/posada_perla_negra/perla_negra_16.JPG',
-          'assets/images/posada_perla_negra/perla_negra_17.JPG',
-          'assets/images/posada_perla_negra/perla_negra_18.JPG',
-          'assets/images/posada_perla_negra/perla_negra_19.JPG',
-          
-        ]
-      },
-    ]
+    this._destinationsService.getDestinations().subscribe(
+      (res: any[]) => {
+        this.destinations = res;
+      }
+    );
   }
 
 }

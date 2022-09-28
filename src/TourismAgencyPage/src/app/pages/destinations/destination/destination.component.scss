@@ -1,0 +1,103 @@
+span,
+h1,
+h5,
+ul,
+li {
+    font-family: "Roboto", sans-serif;
+}
+
+.destination-title {
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.main-box-destinations {
+    background-color: #f2f2f2;
+    min-height: 100vh;
+}
+
+.main-information-box {
+    background-color: white;
+    box-shadow: 0 1px 4px rgba(41, 51, 57, 0.5);
+}
+
+.details-navbar {
+    background-color: white;
+    position: sticky;
+    top: 58px;
+    padding: 10px 0px 0px 0px;
+    border: 1px solid #f2f2f2;
+    z-index: 1;
+}
+
+.list-details-navbar {
+    margin: 0px;
+}
+
+.list-element-1,
+.list-element-2,
+.list-element-3,
+.list-element-4 {
+    font-size: 16px;
+    display: inline-block;
+    margin: 0px 10px;
+    text-align: center;
+}
+
+.list-element-1:hover,
+.list-element-2:hover,
+.list-element-3:hover,
+.list-element-4:hover {
+    cursor: pointer;
+}
+
+.list-element-1 {
+    width: 80px;
+}
+
+.list-element-2 {
+    width: 100px;
+}
+
+.list-element-3 {
+    width: 80px;
+}
+
+.list-element-4 {
+    width: 40px;
+}
+
+.list-element-2:hover ~ .nav-line {
+    margin-left: 105px;
+    width: 110px;
+}
+
+.list-element-3:hover ~ .nav-line {
+    margin-left: 230px;
+    width: 80px;
+}
+
+.list-element-4:hover ~ .nav-line {
+    margin-left: 320px;
+    width: 80px;   
+}
+
+.nav-line {
+    height: 2.5px;
+    width: 80px;
+    margin: 0;
+    margin-left: 10px;
+    background: #cc0000;
+    border: none;
+    transition: 0.25s ease-in-out;
+}
+
+
+@media screen and (max-width: 990px) {
+    .details-navbar {
+        white-space: nowrap;
+        overflow-x: scroll;
+        padding: 10px 0px 5px 0px;
+    }
+}
