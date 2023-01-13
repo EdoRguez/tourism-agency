@@ -1,0 +1,311 @@
+[
+    {
+        "id": 1,
+        "name": "Villa 62",
+        "description": "Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi. Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio. Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget neque. Phasellus nec tortor vel tellus pulvinar feugiat.",
+        "type": "Villa",
+        "imageUrl": "assets/images/villa_62/villa_62_1.png",
+        "basePrice": 99,
+        "destination": "Parque Nacional Morrocoy",
+        "googleMapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1425.921320370866!2d-68.36657971287245!3d10.86481247952796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8112f6d9d48151%3A0xeb2a2b9f67b975e2!2sCOTOPERI%20Hotel%20%26%20Lounge%20Tucacas!5e0!3m2!1sen!2sve!4v1673399875287!5m2!1sen!2sve",
+        "services": [
+            {
+                "type": "Wifi",
+                "iconClass": "fa fa-wifi"
+            },
+            {
+                "type": "Piscina",
+                "iconClass": "fas fa-swimming-pool"
+            },
+            {
+                "type": "Mascotas",
+                "iconClass": "fas fa-dog"
+            },
+            {
+                "type": "TV",
+                "iconClass": "fas fa-tv"
+            },
+            {
+                "type": "Restaurante",
+                "iconClass": "fas fa-utensils"
+            },
+            {
+                "type": "Spa",
+                "iconClass": "fas fa-spa"
+            },
+            {
+                "type": "Bar",
+                "iconClass": "fas fa-glass-martini-alt"
+            },
+            {
+                "type": "Playa",
+                "iconClass": "fas fa-umbrella-beach"
+            },
+            {
+                "type": "Aire acondicionado",
+                "iconClass": "fas fa-snowflake"
+            },
+            {
+                "type": "Estacionamiento",
+                "iconClass": "fas fa-parking"
+            },
+            {
+                "type": "Seguridad",
+                "iconClass": "far fa-eye"
+            },
+            {
+                "type": "Pago Sin Efectivo",
+                "iconClass": "far fa-credit-card"
+            },
+            {
+                "type": "Lavandería",
+                "iconClass": "fas fa-soap"
+            },
+            {
+                "type": "Servicio Limpieza",
+                "iconClass": "fas fa-broom"
+            },
+            {
+                "type": "Sombrillas",
+                "iconClass": "fas fa-umbrella-beach"
+            },
+            {
+                "type": "Baño",
+                "iconClass": "fas fa-bath"
+            },
+            {
+                "type": "Escritorio",
+                "iconClass": "fas fa-pen-fancy"
+            },
+            {
+                "type": "Balcón y ventana",
+                "iconClass": "far fa-window-maximize"
+            },
+            {
+                "type": "Teléfono",
+                "iconClass": "fas fa-phone"
+            },
+            {
+                "type": "Caja Fuerte",
+                "iconClass": "fas fa-toolbox"
+            }
+        ],
+        "imagesUrl": [
+            "assets/images/villa_62/villa_62_1.png",
+            "assets/images/villa_62/villa_62_2.png",
+            "assets/images/villa_62/villa_62_3.png",
+            "assets/images/villa_62/villa_62_4.png",
+            "assets/images/villa_62/villa_62_5.png",
+            "assets/images/villa_62/villa_62_6.png",
+            "assets/images/villa_62/villa_62_7.png"
+        ]
+    },
+        {
+        "id": 2,
+        "name": "Villa M15",
+        "description": "Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi. Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio. Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget neque. Phasellus nec tortor vel tellus pulvinar feugiat.",
+        "type": "Villa",
+        "imageUrl": "assets/images/villa_m15/villa_m15_1.png",
+        "basePrice": 99,
+        "destination": "Parque Nacional Morrocoy",
+        "googleMapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1425.921320370866!2d-68.36657971287245!3d10.86481247952796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8112f6d9d48151%3A0xeb2a2b9f67b975e2!2sCOTOPERI%20Hotel%20%26%20Lounge%20Tucacas!5e0!3m2!1sen!2sve!4v1673399875287!5m2!1sen!2sve",
+        "services": [
+            {
+                "type": "Wifi",
+                "iconClass": "fa fa-wifi"
+            },
+            {
+                "type": "Piscina",
+                "iconClass": "fas fa-swimming-pool"
+            },
+            {
+                "type": "Mascotas",
+                "iconClass": "fas fa-dog"
+            },
+            {
+                "type": "TV",
+                "iconClass": "fas fa-tv"
+            },
+            {
+                "type": "Restaurante",
+                "iconClass": "fas fa-utensils"
+            },
+            {
+                "type": "Spa",
+                "iconClass": "fas fa-spa"
+            },
+            {
+                "type": "Bar",
+                "iconClass": "fas fa-glass-martini-alt"
+            },
+            {
+                "type": "Playa",
+                "iconClass": "fas fa-umbrella-beach"
+            },
+            {
+                "type": "Aire acondicionado",
+                "iconClass": "fas fa-snowflake"
+            },
+            {
+                "type": "Estacionamiento",
+                "iconClass": "fas fa-parking"
+            },
+            {
+                "type": "Seguridad",
+                "iconClass": "far fa-eye"
+            },
+            {
+                "type": "Pago Sin Efectivo",
+                "iconClass": "far fa-credit-card"
+            },
+            {
+                "type": "Lavandería",
+                "iconClass": "fas fa-soap"
+            },
+            {
+                "type": "Servicio Limpieza",
+                "iconClass": "fas fa-broom"
+            },
+            {
+                "type": "Sombrillas",
+                "iconClass": "fas fa-umbrella-beach"
+            },
+            {
+                "type": "Baño",
+                "iconClass": "fas fa-bath"
+            },
+            {
+                "type": "Escritorio",
+                "iconClass": "fas fa-pen-fancy"
+            },
+            {
+                "type": "Balcón y ventana",
+                "iconClass": "far fa-window-maximize"
+            },
+            {
+                "type": "Teléfono",
+                "iconClass": "fas fa-phone"
+            },
+            {
+                "type": "Caja Fuerte",
+                "iconClass": "fas fa-toolbox"
+            }
+        ],
+        "imagesUrl": [
+            "assets/images/villa_m15/villa_m15_1.png",
+            "assets/images/villa_m15/villa_m15_2.png",
+            "assets/images/villa_m15/villa_m15_3.png",
+            "assets/images/villa_m15/villa_m15_4.png",
+            "assets/images/villa_m15/villa_m15_5.png",
+            "assets/images/villa_m15/villa_m15_6.png",
+            "assets/images/villa_m15/villa_m15_7.png",
+            "assets/images/villa_m15/villa_m15_8.png",
+            "assets/images/villa_m15/villa_m15_9.png",
+            "assets/images/villa_m15/villa_m15_10.png",
+            "assets/images/villa_m15/villa_m15_11.png",
+            "assets/images/villa_m15/villa_m15_12.png",
+            "assets/images/villa_m15/villa_m15_13.png",
+            "assets/images/villa_m15/villa_m15_14.png"
+        ]
+    },
+            {
+        "id": 3,
+        "name": "Villa Sur",
+        "description": "Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi. Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio. Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget neque. Phasellus nec tortor vel tellus pulvinar feugiat.",
+        "type": "Villa",
+        "imageUrl": "assets/images/villa_sur/villa_sur_1.png",
+        "basePrice": 99,
+        "destination": "Parque Nacional Morrocoy",
+        "googleMapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1425.921320370866!2d-68.36657971287245!3d10.86481247952796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8112f6d9d48151%3A0xeb2a2b9f67b975e2!2sCOTOPERI%20Hotel%20%26%20Lounge%20Tucacas!5e0!3m2!1sen!2sve!4v1673399875287!5m2!1sen!2sve",
+        "services": [
+            {
+                "type": "Wifi",
+                "iconClass": "fa fa-wifi"
+            },
+            {
+                "type": "Piscina",
+                "iconClass": "fas fa-swimming-pool"
+            },
+            {
+                "type": "Mascotas",
+                "iconClass": "fas fa-dog"
+            },
+            {
+                "type": "TV",
+                "iconClass": "fas fa-tv"
+            },
+            {
+                "type": "Restaurante",
+                "iconClass": "fas fa-utensils"
+            },
+            {
+                "type": "Spa",
+                "iconClass": "fas fa-spa"
+            },
+            {
+                "type": "Bar",
+                "iconClass": "fas fa-glass-martini-alt"
+            },
+            {
+                "type": "Playa",
+                "iconClass": "fas fa-umbrella-beach"
+            },
+            {
+                "type": "Aire acondicionado",
+                "iconClass": "fas fa-snowflake"
+            },
+            {
+                "type": "Estacionamiento",
+                "iconClass": "fas fa-parking"
+            },
+            {
+                "type": "Seguridad",
+                "iconClass": "far fa-eye"
+            },
+            {
+                "type": "Pago Sin Efectivo",
+                "iconClass": "far fa-credit-card"
+            },
+            {
+                "type": "Lavandería",
+                "iconClass": "fas fa-soap"
+            },
+            {
+                "type": "Servicio Limpieza",
+                "iconClass": "fas fa-broom"
+            },
+            {
+                "type": "Sombrillas",
+                "iconClass": "fas fa-umbrella-beach"
+            },
+            {
+                "type": "Baño",
+                "iconClass": "fas fa-bath"
+            },
+            {
+                "type": "Escritorio",
+                "iconClass": "fas fa-pen-fancy"
+            },
+            {
+                "type": "Balcón y ventana",
+                "iconClass": "far fa-window-maximize"
+            },
+            {
+                "type": "Teléfono",
+                "iconClass": "fas fa-phone"
+            },
+            {
+                "type": "Caja Fuerte",
+                "iconClass": "fas fa-toolbox"
+            }
+        ],
+        "imagesUrl": [
+            "assets/images/villa_sur/villa_sur_1.png",
+            "assets/images/villa_sur/villa_sur_2.png",
+            "assets/images/villa_sur/villa_sur_3.png",
+            "assets/images/villa_sur/villa_sur_4.png",
+            "assets/images/villa_sur/villa_sur_5.png",
+            "assets/images/villa_sur/villa_sur_6.png"
+        ]
+    }
+]
