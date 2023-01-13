@@ -8,39 +8,45 @@ const routes: Routes = [
             import('./pages/home/home.module').then((m) => m.HomeModule),
     },
     {
-        path: 'destinos',
+        path: 'posadas',
         loadChildren: () =>
             import('./pages/destinations/destinations.module').then(
                 (m) => m.DestinationsModule
             ),
     },
     {
-        path: 'lanchas',
+        path: 'embarcaciones',
         loadChildren: () =>
-            import('./pages/boats/boats.module').then(
-                (m) => m.BoatsModule
-            ),
+            import('./pages/boats/boats.module').then((m) => m.BoatsModule),
     },
     {
-        path: 'planes',
+        path: 'casas',
         loadChildren: () =>
-            import('./pages/tourist-plans/tourist-plans.module').then(
-                (m) => m.TouristPlansModule
-            ),
+            import('./pages/houses/houses.module').then((m) => m.HousesModule),
     },
-    {
-        path: 'eventos',
-        loadChildren: () =>
-            import('./pages/tourism-events/tourism-events.module').then(
-                (m) => m.TourismEventsModule
-            ),
-    },
+    // {
+    //     path: 'planes',
+    //     loadChildren: () =>
+    //         import('./pages/tourist-plans/tourist-plans.module').then(
+    //             (m) => m.TouristPlansModule
+    //         ),
+    // },
+    // {
+    //     path: 'eventos',
+    //     loadChildren: () =>
+    //         import('./pages/tourism-events/tourism-events.module').then(
+    //             (m) => m.TourismEventsModule
+    //         ),
+    // },
+    { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes, {
-        scrollPositionRestoration: 'enabled'
-      })],
+    imports: [
+        RouterModule.forRoot(routes, {
+            scrollPositionRestoration: 'enabled',
+        }),
+    ],
     exports: [RouterModule],
 })
 export class AppRoutingModule {}

@@ -11,40 +11,69 @@ button.navbar-element {
 }
 
 .nav-title {
-    font-family: "Great Vibes", cursive;
-    color: #cc0000;
+    font-family: "Playfair Display", serif;
+    text-transform: uppercase;
+    color: #042d62;
     font-size: 26px;
     margin: 0px;
+    transition: 0.2s;
+}
+
+.nav-title:hover {
+    color: #127bcb;
 }
 
 .custom-navbar {
     background-color: white;
-    border-bottom: 1px solid #cc0000;
-    font-family: "Roboto", sans-serif;
+    border-bottom: 1px solid #042d62;
+    font-family: "Montserrat", sans-serif;
 }
 
 .dropdown-places-element {
-    color: #cc0000;
+    color: #042d62;
     text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .dropdown-places-element:active {
-    background-color: #cc0000;
+    background-color: #042d62;
     color: white;
 }
 
 .navbar-element {
-    color: #cc0000 !important;
+    color: #042d62 !important;
     text-transform: uppercase;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+
+.navbar-element:hover {
+    font-weight: bold;
+    color: #127bcb !important;
+}
+
+.navbar-element-selected {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    color: #042d62 !important;
 }
 
 .custom-destination {
     padding: 5px 0px;
 }
 
+.mobile-logo {
+    width: 40px;
+    display: none;
+}
+
 ::ng-deep .dropdown-menu {
-    border: 1px solid #cc0000;
+    border: 1px solid #042d62;
     border-radius: 0px;
+}
+
+@media screen and (max-width: 991px) {
+    .mobile-logo {
+        display: block;
+    }
 }

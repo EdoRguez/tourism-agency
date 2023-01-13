@@ -8,6 +8,10 @@
 .destination-box:hover {
     transform: scale(1.005);
     cursor: pointer;
+
+    .card-body-title {
+        color: #127BCB;
+    }
 }
 
 .info-card-main-image {
@@ -26,13 +30,16 @@
 .card-body-services-description,
 .card-body-price-title,
 .card-body-price-description {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0px;
 }
 
 .card-body-title {
-    font-size: 20px;
-    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Genty', sans-serif;
+    color: #042D62;
+    margin-top: 15px;
+    transition: .3s;
 }
 
 .card-body-destination,
@@ -72,8 +79,11 @@
 }
 
 .card-body-price-description {
-    color: green;
+    color: #BFE4F9;
     font-weight: bold;
+    font-size: 40px;
+    font-family: 'League Spartan', sans-serif;
+    text-shadow: 2px 2px #127BCB;
 }
 
 .details-box {
@@ -81,8 +91,12 @@
 }
 
 .tab-title {
-    font-family: "Roboto", sans-serif;
-    color: #cc0000
+    font-family: 'Montserrat', sans-serif;
+    color: #042D62
+}
+
+.tab-title:hover {
+    color: #127BCB;
 }
 
 .show-map-btn-mobile {

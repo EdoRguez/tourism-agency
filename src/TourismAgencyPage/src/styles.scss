@@ -2,38 +2,54 @@
 @import "../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
 @import "../node_modules//animate.css/animate.min.css";
 
+// font-family: 'Belleza', sans-serif;
+// font-family: 'League Spartan', sans-serif;
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Playfair Display', serif;
+// font-family: 'Genty', sans-serif;
+
+@font-face {
+  font-family: "Genty";
+  src: url('assets/fonts/GentyDemo-Regular.otf') format('otf'),
+       url('assets/fonts/GentyDemo-Regular.ttf') format('truetype');
+}
+
 body {
     background-color: white;
 }
 
 .color-base {
-    color: #cc0000;
+    color: #042D62;
+}
+
+.color-secondary {
+    color: #127BCB;
 }
 
 .btn-main {
-    background-color: #cc0000;
+    background-color: #042D62;
     color: white;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border-radius: 0px;
     transition: 0.2s;
 }
 
 .btn-main:hover {
     color: white;
-    background-color: #800000;
+    background-color: #127BCB;
 }
 
 .btn-main-unselected {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: white;
-    border: 1px solid #cc0000;
-    color: #cc0000;
+    border: 1px solid #042D62;
+    color: #042D62;
     border-radius: 0px;
     transition: 0.2s;
 }
 
 .btn-main-unselected:hover {
-    background-color: #cc0000;
+    background-color: #042D62;
     color: white;
 }
 
@@ -45,23 +61,23 @@ body {
 
 .input-base {
     border-radius: 0px;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .input-base:focus {
-    border: 1px solid #cc0000;
+    border: 1px solid #042D62;
     box-shadow: none;
 }
 
 .input-base-with-icon {
     border-radius: 0px;
     border-left: none;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .input-base-with-icon:focus {
     border: none;
-    border: 1px solid #cc0000;
+    border: 1px solid #042D62;
     border-left: none;
     box-shadow: none;
 }
@@ -99,7 +115,7 @@ body {
     width: 100%;
     height: 6px;
     border-radius: 5px;
-    background: #cc0000;
+    background: #042D62;
     outline: none;
     opacity: 0.7;
     -webkit-transition: 0.2s;
@@ -114,7 +130,7 @@ body {
     height: 20px;
     border-radius: 50%;
     background: white;
-    border: 1px solid #cc0000;
+    border: 1px solid #042D62;
     cursor: pointer;
 }
 
@@ -123,20 +139,20 @@ body {
     height: 20px;
     border-radius: 50%;
     background: white;
-    border: 1px solid #cc0000;
+    border: 1px solid #042D62;
     cursor: pointer;
 }
 
 .select-main {
     border-radius: 0px;
-    font-family: "Roboto", sans-serif;
-    background-color: #cc0000;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #042D62;
     color: white;
 }
 
 .select-main:focus {
     box-shadow: none;
-    border-color: #cc0000;
-    background-color: #cc0000;
+    border-color: #042D62;
+    background-color: #042D62;
     color: white;
 }

@@ -5,7 +5,7 @@ import { DestinationsComponent } from './destinations.component';
 
 const routes: Routes = [
     { path: '', component: DestinationsComponent },
-    { path: ':id', component: DestinationComponent },
+    // { path: ':id', component: DestinationComponent },
 ];
 
 @NgModule({

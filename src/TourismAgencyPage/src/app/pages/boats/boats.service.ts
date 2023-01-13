@@ -1,20 +1,40 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root',
 })
 export class BoatsService {
+    private API_URL: string = `${environment.apiUrl}/json/boats.json`;
 
-  private showMapSubject = new Subject<boolean>();
+    private showMapSubject = new Subject<boolean>();
+    private toggleCardSubject = new Subject<number>();
 
-  get showMapAction$(): Observable<boolean> {
-    return this.showMapSubject.asObservable();
-  }
+    constructor(private _http: HttpClient) {}
 
-  toggleMap(value: boolean): void {
-    this.showMapSubject.next(value);
-  }
+    get toggleCard$(): Observable<number> {
+        return this.toggleCardSubject.asObservable();
+    }
 
-  constructor() { }
+    get showMapAction$(): Observable<boolean> {
+        return this.showMapSubject.asObservable();
+    }
+
+    toggleMap(value: boolean): void {
+        this.showMapSubject.next(value);
+    }
+
+    toggleCard(id: number): void {
+        this.toggleCardSubject.next(id);
+    }
+
+    getBoat(id: number): Observable<any[]> {
+        return this._http.get<any[]>(this.API_URL);
+    }
+
+    getBoats(): Observable<any[]> {
+        return this._http.get<any[]>(this.API_URL);
+    }
 }

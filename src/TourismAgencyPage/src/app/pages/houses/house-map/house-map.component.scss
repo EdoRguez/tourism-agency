@@ -1,0 +1,17 @@
+.map-box {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 1px 4px rgba(41,51,57,.5);
+    background-color: white;
+    position: relative;
+}
+
+.loading-box {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -37,23 +37,23 @@
 }
 
 .service-section-title {
-    color: #990000;
-    font-family: "Roboto", sans-serif;
+    color: #042D62;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 20px;
     margin: 0px;
 }
 
 .service-section-title-2 {
-    color: #cc0000;
-    font-family: "Roboto", sans-serif;
+    color: #042D62;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
 
 .service-section-text {
     color: black;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
 
@@ -75,7 +75,7 @@
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #cc0000;
+    background-color: #042D62;
 }
 
 .box-service-circle {
@@ -88,6 +88,11 @@
         rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
         rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
     cursor: pointer;
+
+    h4 {
+        transition: .2s;
+        color: #127BCB;
+    }
 }
 
 .circle-box-margin {
@@ -105,36 +110,38 @@
 }
 
 .home-about-title {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
     font-weight: bold;
     font-size: 20px;
-    color: #cc0000;
+    color: #042D62;
     margin: 40px 0px 20px 0px;
 }
 
 .home-about-description {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 14px;
 }
 
 .btn-home-about {
+    font-family: 'Montserrat', sans-serif;
     border: 1px solid white;
     padding: 10px 20px;
-    background-color: #990000;
+    background-color: #042D62;
     color: white;
     margin-bottom: 20px;
     transition: 0.2s;
 }
 
 .btn-home-about:hover {
-    background-color: #cc0000;
+    background-color: #127BCB;
     transform: scale(1.02);
 }
 
 .guide-title {
-    font-family: "Roboto", sans-serif;
-    color: #cc0000;
+    font-family: 'Montserrat', sans-serif;
+    color: #042D62;
     font-weight: bold;
     font-size: 20px;
 }
@@ -148,22 +155,22 @@
 }
 
 .home-ul li a {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: black;
 }
 
 .home-ul li::before {
     content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #cc0000; /* Change the color */
+    color: #042D62; /* Change the color */
     display: inline-block; /* Needed to add space between the bullet and the text */
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
 
 .activities-title {
-    font-family: "Roboto", sans-serif;
-    color: #cc0000;
+    font-family: 'Montserrat', sans-serif;
+    color: #042D62;
     font-weight: bold;
     font-size: 20px;
     margin: 0px;
@@ -216,12 +223,12 @@
     bottom: 0px;
     width: 100%;
     height: 30px;
-    background-color: #cc0000;
+    background-color: #042D62;
     visibility: hidden;
 }
 
 .activities-box-hover > p {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     color: white;
     margin: 0px;

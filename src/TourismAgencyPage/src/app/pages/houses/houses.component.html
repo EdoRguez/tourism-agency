@@ -1,0 +1,20 @@
+<div class="main-box-houses">
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-12 mt-2">
+                <app-destination-filter></app-destination-filter>
+            </div>
+        </div>
+    </div> -->
+
+    <div [ngClass]="{'container-fluid': showMapRight, 'container': !showMapRight}">
+        <div class="row">
+            <div class="col-12" [ngClass]="{'col-md-8': showMapRight, 'col-md-12': !showMapRight}">
+                <app-houses-list></app-houses-list>
+            </div>
+            <div *ngIf="showMapRight" class="col-12 col-md-4 parent-house-map">
+                <app-house-map></app-house-map>
+            </div>
+        </div>
+    </div>
+</div>

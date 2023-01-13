@@ -11,6 +11,7 @@ import { TouristPlansModule } from './pages/tourist-plans/tourist-plans.module';
 import { TourismEventsModule } from './pages/tourism-events/tourism-events.module';
 import { BoatsModule } from './pages/boats/boats.module';
 import { HttpClientModule } from '@angular/common/http';
+import { HousesModule } from './pages/houses/houses.module';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     TouristPlansModule,
     TourismEventsModule,
     BoatsModule,
+    HousesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
