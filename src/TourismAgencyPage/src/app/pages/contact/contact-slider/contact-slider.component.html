@@ -1,0 +1,22 @@
+<ngb-carousel
+    *ngIf="carouselData"
+    [showNavigationArrows]="false"
+    [interval]="4000"
+    [pauseOnHover]="false"
+>
+    <ng-template ngbSlide *ngFor="let data of carouselData">
+        <div class="picsum-img-wrapper">
+            <div
+                [ngStyle]="{ 'background-image': 'url(' + data.image + ')' }"
+                class="contact-carousel-image"
+            >
+                <div class="image-gradient"></div>
+            </div>
+        </div>
+        <div class="carousel-caption">
+            <h3>{{ data.title }}</h3>
+            <p>{{ data.description }}</p>
+            <button class="btn-carousel">Saber Más</button>
+        </div>
+    </ng-template>
+</ngb-carousel>

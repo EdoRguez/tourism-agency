@@ -17,7 +17,14 @@
                 src="assets/images/logos/w1.png"
                 class="img-fluid mobile-logo"
             />
-            <i class="fa fa-bars" [ngClass]="{'color-base': isCollapsed, 'color-secondary': !isCollapsed}" aria-hidden="true"></i>
+            <i
+                class="fa fa-bars"
+                [ngClass]="{
+                    'color-base': isCollapsed,
+                    'color-secondary': !isCollapsed
+                }"
+                aria-hidden="true"
+            ></i>
         </div>
     </button>
 
@@ -78,6 +85,14 @@
           <button ngbDropdownItem class="dropdown-places-element">Entretenimiento</button>
         </div>
       </li> -->
+            <li class="nav-item mr-2" (click)="isCollapsed = true">
+                <a
+                    class="nav-link navbar-element custom-destination"
+                    [routerLink]="['contacto']"
+                    [routerLinkActive]="['navbar-element-selected']"
+                    >Contacto</a
+                >
+            </li>
         </ul>
 
         <!-- <ul class="navbar-nav">
