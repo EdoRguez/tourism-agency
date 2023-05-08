@@ -2,11 +2,11 @@
     {
         "id": 1,
         "name": "Posada Palma Dorada",
-        "description": "Sed commodo, leo at suscipit dictum, quam est porttitor sapien, eget sodales nibh elit id diam. Nulla facilisi. Donec egestas ligula vitae odio interdum aliquet. Duis lectus turpis, luctus eget tincidunt eu, congue et odio. Duis pharetra et nisl at faucibus. Quisque luctus pulvinar arcu, et molestie lectus ultrices et. Sed diam urna, egestas ut ipsum vel, volutpat volutpat neque. Praesent fringilla tortor arcu. Vivamus faucibus nisl enim, nec tristique ipsum euismod facilisis. Morbi ut bibendum est, eu tincidunt odio. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris aliquet odio ac lorem aliquet ultricies in eget neque. Phasellus nec tortor vel tellus pulvinar feugiat.",
+        "description": "La Posada Palma Dorada fue concebida como un lugar de confort para la familia, la cual gira en torno a un patio central que cuenta con dos jacuzzis de hidromasajes, dentro de sus instalaciones se encuentran un total de 34 habitaciones, distribuidas dos módulos. Cuenta con un restaurante dentro de la posada y un Chiringuito a la orilla del mar, un el lugar perfecto para cenar en familia tras un día de playa, el mismo se caracteriza por sus snacks y sus pizzas al horno de leña.",
         "type": "Posada",
         "imageUrl": "assets/images/posada_palma_dorada/palma_4.JPG",
-        "basePrice": 99,
-        "destination": "Parque Nacional Morrocoy",
+        "basePrice": 50,
+        "destination": "Tucacas",
         "googleMapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13183.67209523176!2d-68.3251465870704!3d10.770711350134864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e810e16b5f16de1%3A0xc9648f7d383590b9!2sPosada%20PALMA%20DORADA!5e0!3m2!1sen!2sve!4v1660008913950!5m2!1sen!2sve",
         "services": [
             {
@@ -122,8 +122,8 @@
         "description": "Raw denim you probably havent heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.",
         "type": "Hotel",
         "imageUrl": "assets/images/posada_los_juanes/juanes_1.JPG",
-        "basePrice": 99,
-        "destination": "Parque Nacional Morrocoy",
+        "basePrice": 30,
+        "destination": "Tucacas",
         "googleMapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.547456590475!2d-68.3300465852124!3d10.769318062269743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e810fd40c971ec9%3A0x78b23e82aed63f0b!2sHotel%20Y%20Posada%20Los%20Juanes!5e0!3m2!1sen!2sve!4v1660009010301!5m2!1sen!2sve",
         "services": [
             {
@@ -199,8 +199,8 @@
         "description": "Raw denim you probably havent heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.",
         "type": "Posada",
         "imageUrl": "assets/images/posada_perla_negra/perla_negra_1.JPG",
-        "basePrice": 99,
-        "destination": "Parque Nacional Morrocoy",
+        "basePrice": 20,
+        "destination": "Tucacas",
         "googleMapLocation": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4797.418305963242!2d-68.3215760121235!3d10.789241567703225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e810fbb3024f64b%3A0x32d99b45d0860ff6!2sposada%20perla%20negra!5e0!3m2!1sen!2sve!4v1660009085304!5m2!1sen!2sve",
         "services": [
             {
@@ -255,8 +255,8 @@
         "description": "Raw denim you probably havent heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.",
         "type": "Hotel",
         "imageUrl": "assets/images/hotel_latitud/latitud_10.jpg",
-        "basePrice": 99,
-        "destination": "Parque Nacional Morrocoy",
+        "basePrice": 40,
+        "destination": "Tucacas",
         "googleMapLocation": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15673.12981479782!2d-68.3660626!3d10.8661083!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x396d82f981dec291!2sLatitud%2010%20Hotel%20Boutique!5e0!3m2!1sen!2sve!4v1672884831989!5m2!1sen!2sve",
         "services": [
             {
