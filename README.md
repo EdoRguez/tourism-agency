@@ -26,6 +26,7 @@ This software uses the following technologies:
 
 - [.NET](https://dotnet.microsoft.com/en-us/)
 - [Angular](https://angular.io/)
+- [PostgreSQL](https://www.postgresql.org/)
 
 ---
 
