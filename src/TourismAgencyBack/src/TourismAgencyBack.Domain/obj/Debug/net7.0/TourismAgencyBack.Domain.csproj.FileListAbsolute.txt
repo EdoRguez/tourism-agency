@@ -1,0 +1,12 @@
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/bin/Debug/net7.0/TourismAgencyBack.Domain.deps.json
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/bin/Debug/net7.0/TourismAgencyBack.Domain.dll
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/bin/Debug/net7.0/TourismAgencyBack.Domain.pdb
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/Debug/net7.0/TourismAgencyBack.Domain.csproj.AssemblyReference.cache
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/Debug/net7.0/TourismAgencyBack.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/Debug/net7.0/TourismAgencyBack.Domain.AssemblyInfoInputs.cache
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/Debug/net7.0/TourismAgencyBack.Domain.AssemblyInfo.cs
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/Debug/net7.0/TourismAgencyBack.Domain.csproj.CoreCompileInputs.cache
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/Debug/net7.0/TourismAgencyBack.Domain.dll
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/Debug/net7.0/refint/TourismAgencyBack.Domain.dll
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/Debug/net7.0/TourismAgencyBack.Domain.pdb
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/Debug/net7.0/ref/TourismAgencyBack.Domain.dll

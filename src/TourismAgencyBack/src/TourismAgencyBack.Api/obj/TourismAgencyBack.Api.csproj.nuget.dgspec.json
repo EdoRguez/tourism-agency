@@ -1,0 +1,352 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.API/TourismAgencyBack.Api.csproj": {}
+  },
+  "projects": {
+    "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.API/TourismAgencyBack.Api.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.API/TourismAgencyBack.Api.csproj",
+        "projectName": "TourismAgencyBack.Api",
+        "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.API/TourismAgencyBack.Api.csproj",
+        "packagesPath": "/Users/pc/.nuget/packages/",
+        "outputPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj"
+              },
+              "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj"
+              },
+              "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Mapster": {
+              "target": "Package",
+              "version": "[7.3.0, )"
+            },
+            "Mapster.DependencyInjection": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj",
+        "projectName": "TourismAgencyBack.Application",
+        "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj",
+        "packagesPath": "/Users/pc/.nuget/packages/",
+        "outputPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentResults": {
+              "target": "Package",
+              "version": "[3.15.2, )"
+            },
+            "FluentValidation.DependencyInjectionExtensions": {
+              "target": "Package",
+              "version": "[11.5.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj",
+        "projectName": "TourismAgencyBack.Contracts",
+        "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj",
+        "packagesPath": "/Users/pc/.nuget/packages/",
+        "outputPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj",
+        "projectName": "TourismAgencyBack.Domain",
+        "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj",
+        "packagesPath": "/Users/pc/.nuget/packages/",
+        "outputPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj",
+        "projectName": "TourismAgencyBack.Infrastructure",
+        "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj",
+        "packagesPath": "/Users/pc/.nuget/packages/",
+        "outputPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/pc/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
+            "Microsoft.Extensions.DependencyInjection.Abstractions": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

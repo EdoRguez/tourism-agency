@@ -1,0 +1,17 @@
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/bin/Debug/net7.0/TourismAgencyBack.Infrastructure.deps.json
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/bin/Debug/net7.0/TourismAgencyBack.Infrastructure.dll
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/bin/Debug/net7.0/TourismAgencyBack.Infrastructure.pdb
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/Debug/net7.0/TourismAgencyBack.Infrastructure.csproj.AssemblyReference.cache
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/Debug/net7.0/TourismAgencyBack.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/Debug/net7.0/TourismAgencyBack.Infrastructure.AssemblyInfoInputs.cache
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/Debug/net7.0/TourismAgencyBack.Infrastructure.AssemblyInfo.cs
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/Debug/net7.0/TourismAgencyBack.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/Debug/net7.0/TourismAgencyBack.Infrastructure.dll
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/Debug/net7.0/refint/TourismAgencyBack.Infrastructure.dll
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/Debug/net7.0/TourismAgencyBack.Infrastructure.pdb
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/Debug/net7.0/ref/TourismAgencyBack.Infrastructure.dll
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/bin/Debug/net7.0/TourismAgencyBack.Application.dll
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/bin/Debug/net7.0/TourismAgencyBack.Domain.dll
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/bin/Debug/net7.0/TourismAgencyBack.Application.pdb
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/bin/Debug/net7.0/TourismAgencyBack.Domain.pdb
+/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/Debug/net7.0/TourismAgencyBack.Infrastructure.csproj.CopyComplete
