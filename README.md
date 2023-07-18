@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://github.com/EdoRguez/tourism-agency/blob/master/assets/logo.png?raw=true" alt="Viaja Venezuela" width="200"></a>
+  <img src="https://github.com/EdoRguez/tourism-agency/blob/master/assets/logo.png?raw=true" alt="Viaja Venezuela" width="200">
   <br>
   Viaja Venezuela
   <br>
