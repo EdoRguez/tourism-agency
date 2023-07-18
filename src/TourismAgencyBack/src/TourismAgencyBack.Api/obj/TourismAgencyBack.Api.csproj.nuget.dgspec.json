@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.API/TourismAgencyBack.Api.csproj": {}
+    "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.API/TourismAgencyBack.Api.csproj": {}
   },
   "projects": {
-    "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.API/TourismAgencyBack.Api.csproj": {
+    "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.API/TourismAgencyBack.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.API/TourismAgencyBack.Api.csproj",
+        "projectUniqueName": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.API/TourismAgencyBack.Api.csproj",
         "projectName": "TourismAgencyBack.Api",
-        "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.API/TourismAgencyBack.Api.csproj",
+        "projectPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.API/TourismAgencyBack.Api.csproj",
         "packagesPath": "/Users/pc/.nuget/packages/",
-        "outputPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.API/obj/",
+        "outputPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/pc/.nuget/NuGet/NuGet.Config"
@@ -20,20 +20,21 @@
           "net7.0"
         ],
         "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.305/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj": {
-                "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj"
+              "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj"
               },
-              "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj": {
-                "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj"
+              "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj"
               },
-              "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj": {
-                "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj"
+              "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj"
               }
             }
           }
@@ -86,18 +87,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj": {
+    "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj",
+        "projectUniqueName": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj",
         "projectName": "TourismAgencyBack.Application",
-        "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj",
+        "projectPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj",
         "packagesPath": "/Users/pc/.nuget/packages/",
-        "outputPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/obj/",
+        "outputPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/pc/.nuget/NuGet/NuGet.Config"
@@ -112,8 +113,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj": {
-                "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj"
+              "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj"
               }
             }
           }
@@ -161,18 +162,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj": {
+    "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj",
+        "projectUniqueName": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj",
         "projectName": "TourismAgencyBack.Contracts",
-        "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj",
+        "projectPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj",
         "packagesPath": "/Users/pc/.nuget/packages/",
-        "outputPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/",
+        "outputPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/pc/.nuget/NuGet/NuGet.Config"
@@ -214,18 +215,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj": {
+    "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj",
+        "projectUniqueName": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj",
         "projectName": "TourismAgencyBack.Domain",
-        "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj",
+        "projectPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj",
         "packagesPath": "/Users/pc/.nuget/packages/",
-        "outputPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/",
+        "outputPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/pc/.nuget/NuGet/NuGet.Config"
@@ -273,18 +274,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj": {
+    "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj",
+        "projectUniqueName": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj",
         "projectName": "TourismAgencyBack.Infrastructure",
-        "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj",
+        "projectPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj",
         "packagesPath": "/Users/pc/.nuget/packages/",
-        "outputPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/",
+        "outputPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/pc/.nuget/NuGet/NuGet.Config"
@@ -299,8 +300,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj": {
-                "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj"
+              "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj": {
+                "projectPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj"
               }
             }
           }
@@ -344,7 +345,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
         }
       }
     }

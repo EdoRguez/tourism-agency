@@ -118,11 +118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj",
+      "projectUniqueName": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj",
       "projectName": "TourismAgencyBack.Domain",
-      "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj",
+      "projectPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj",
       "packagesPath": "/Users/pc/.nuget/packages/",
-      "outputPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/",
+      "outputPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/pc/.nuget/NuGet/NuGet.Config"
@@ -170,7 +170,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
       }
     }
   }

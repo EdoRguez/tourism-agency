@@ -929,11 +929,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj",
+      "projectUniqueName": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj",
       "projectName": "TourismAgencyBack.Infrastructure",
-      "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj",
+      "projectPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/TourismAgencyBack.Infrastructure.csproj",
       "packagesPath": "/Users/pc/.nuget/packages/",
-      "outputPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/",
+      "outputPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/pc/.nuget/NuGet/NuGet.Config"
@@ -948,8 +948,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj": {
-              "projectPath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj"
+            "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj": {
+              "projectPath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj"
             }
           }
         }
@@ -993,7 +993,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.305/RuntimeIdentifierGraph.json"
       }
     }
   }

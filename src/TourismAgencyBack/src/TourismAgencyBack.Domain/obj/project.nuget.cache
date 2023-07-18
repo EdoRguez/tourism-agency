@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8frLX/EA+aNh+S6G2dsFESb+53ZyM8Kx9ipuazkpO1J3TQ9HaxwlYrLOzqUwnq3MdU505DKJ23Yr8dbQ67m/0w==",
+  "dgSpecHash": "liOwiuLrWllu9HBhkhcFptUDtqgbx18ADkCN4NDLbcfkFrNFsE/3/NpAlnhfn4kZXjAhDAxjCM9NOxuREsrNhQ==",
   "success": true,
-  "projectFilePath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj",
+  "projectFilePath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Domain/TourismAgencyBack.Domain.csproj",
   "expectedPackageFiles": [
     "/Users/pc/.nuget/packages/mediatr/12.0.1/mediatr.12.0.1.nupkg.sha512",
     "/Users/pc/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",

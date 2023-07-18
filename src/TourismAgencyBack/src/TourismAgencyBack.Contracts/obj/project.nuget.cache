@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UIW1HMje5/lVuEePCyza9XM38ojVJDSKfNHU6r08HErWc2hA9Q+3FhxHw5CNoTLUfflPhuFfEF9oHbTTkejCUg==",
+  "dgSpecHash": "Q4Kw+APaQt41NW91Aw/CbPWHNVRDiOxEHhzs0kTjaxDo6bT6Fivykcwdrbug0KUswzvMROe046qDO7bhVZpAfw==",
   "success": true,
-  "projectFilePath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj",
+  "projectFilePath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/TourismAgencyBack.Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

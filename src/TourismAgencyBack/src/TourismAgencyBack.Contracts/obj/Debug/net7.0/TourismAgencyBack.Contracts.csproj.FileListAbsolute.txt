@@ -10,3 +10,15 @@
 /Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/Debug/net7.0/refint/TourismAgencyBack.Contracts.dll
 /Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/Debug/net7.0/TourismAgencyBack.Contracts.pdb
 /Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/Debug/net7.0/ref/TourismAgencyBack.Contracts.dll
+/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/bin/Debug/net7.0/TourismAgencyBack.Contracts.deps.json
+/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/bin/Debug/net7.0/TourismAgencyBack.Contracts.dll
+/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/bin/Debug/net7.0/TourismAgencyBack.Contracts.pdb
+/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/Debug/net7.0/TourismAgencyBack.Contracts.csproj.AssemblyReference.cache
+/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/Debug/net7.0/TourismAgencyBack.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/Debug/net7.0/TourismAgencyBack.Contracts.AssemblyInfoInputs.cache
+/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/Debug/net7.0/TourismAgencyBack.Contracts.AssemblyInfo.cs
+/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/Debug/net7.0/TourismAgencyBack.Contracts.csproj.CoreCompileInputs.cache
+/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/Debug/net7.0/TourismAgencyBack.Contracts.dll
+/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/Debug/net7.0/refint/TourismAgencyBack.Contracts.dll
+/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/Debug/net7.0/TourismAgencyBack.Contracts.pdb
+/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Contracts/obj/Debug/net7.0/ref/TourismAgencyBack.Contracts.dll

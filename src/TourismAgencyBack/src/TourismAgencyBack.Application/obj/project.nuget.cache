@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ce6LBLA5sahzhPGTyoOuNZJuBi5qpP6XWkANNYOMwHGd7S04w7zASGTcs2QStl0pXjj//FQqnqVI8UXDhi+ikg==",
+  "dgSpecHash": "hg3Te1Td6KHnuv+6OVFmYUng909KXL4/4TPhda6JUhKkzOogaGy2wf0cpUqAeR5JgJmeBV4phFHoxD7WfFkQeQ==",
   "success": true,
-  "projectFilePath": "/Users/pc/Documents/Projects/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj",
+  "projectFilePath": "/Users/pc/Documents/Projects/tourism-agency/src/TourismAgencyBack/src/TourismAgencyBack.Application/TourismAgencyBack.Application.csproj",
   "expectedPackageFiles": [
     "/Users/pc/.nuget/packages/fluentresults/3.15.2/fluentresults.3.15.2.nupkg.sha512",
     "/Users/pc/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
