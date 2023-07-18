@@ -1,0 +1,272 @@
+<div class="row">
+    <div class="col-12">
+        <div class="position-relative">
+            <div
+                class="card-wide-box-shadow"
+                (click)="onClickElementDetails($event, inputElement.id)"
+            >
+                <div class="position-relative">
+                    <div class="card-wide-box-shadow-position">
+                        <div class="row" *ngIf="!isElementBoat">
+                            <div
+                                class="col-4 col-sm-5 col-md-3 col-lg-2 offset-1 offset-md-1 offset-lg-1"
+                            >
+                                <span class="card-wide-option">Galería</span>
+                            </div>
+                            <div
+                                class="col-6 col-sm-5 col-md-3 col-lg-2 offset-md-1 offset-lg-0"
+                            >
+                                <span class="card-wide-option"
+                                    >Servicios</span
+                                >
+                            </div>
+                            <div
+                                class="col-4 col-sm-5 col-md-3 col-lg-2 offset-1 offset-md-1 offset-lg-0"
+                            >
+                                <span class="card-wide-option"
+                                    >Habitaciones</span
+                                >
+                            </div>
+                            <div
+                                class="col-6 col-sm-5 col-md-4 col-lg-3 offset-md-1 offset-lg-0"
+                            >
+                                <span class="card-wide-option"
+                                    >Preguntas Frecuentes</span
+                                >
+                            </div>
+                            <div
+                                class="col-4 col-sm-5 col-md-4 col-lg-2 offset-1 offset-md-0"
+                            >
+                                <span class="card-wide-option"
+                                    >Información</span
+                                >
+                            </div>
+                        </div>
+                        <div class="row" *ngIf="isElementBoat">
+                            <div
+                                class="col-4 col-lg-2 offset-2 offset-lg-1"
+                            >
+                                <span class="card-wide-option">Galería</span>
+                            </div>
+                            <div
+                                class="col-4 offset-1 offset-lg-0 col-lg-3"
+                            >
+                                <span class="card-wide-option"
+                                    >Equipamiento</span
+                                >
+                            </div>
+                            <div
+                                class="col-4 offset-1 offset-lg-0 col-lg-3"
+                            >
+                                <span class="card-wide-option"
+                                    >Preguntas Frecuentes</span
+                                >
+                            </div>
+                            <div
+                                class="col-4 offset-2 offset-lg-0 col-lg-3"
+                            >
+                                <span class="card-wide-option"
+                                    >Información</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-wide-box">
+                <div
+                    class="card-wide-elements"
+                    (click)="onClickElementDetails($event, inputElement.id)"
+                >
+                    <div class="row h-100">
+                        <div class="col-5 col-md-4 p-0">
+                            <div
+                                class="info-card-main-image"
+                                [ngStyle]="{
+                                    'background-image':
+                                        'url(' + inputElement.imageUrl + ')'
+                                }"
+                            ></div>
+                        </div>
+                        <div class="col-7 col-md-8">
+                            <div class="row h-100">
+                                <div class="col-12 col-md-7">
+                                    <div class="card-body-left">
+                                        <div>
+                                            <h5 [ngClass]="[(isElementBoat) ? 'card-body-title-boat' : 'card-body-title']">
+                                                {{ inputElement.name }}
+                                            </h5>
+                                            <span class="card-body-type">{{
+                                                inputElement.type
+                                            }}</span>
+                                        </div>
+                                        <div>
+                                            <span class="card-body-opinions"
+                                                >Opiniones de otros
+                                                clientes</span
+                                            >
+                                            <div
+                                                class="d-flex align-items-center mt-2"
+                                            >
+                                                <img
+                                                    src="assets/images/icons/star.png"
+                                                    class="star-icon"
+                                                />
+                                                <span
+                                                    class="card-body-rating ml-1"
+                                                    >4.5 / 5</span
+                                                >
+                                            </div>
+                                            <div
+                                                class="card-destination-box-map"
+                                            >
+                                                <div
+                                                    class="d-flex align-items-center"
+                                                >
+                                                    <i
+                                                        class="fas fa-map-marker-alt"
+                                                    ></i>
+                                                    <p
+                                                        class="card-body-location ml-1"
+                                                    >
+                                                        {{
+                                                            inputElement.destination
+                                                        }}
+                                                    </p>
+                                                </div>
+                                                <span
+                                                    class="show-map-text show-map-pc"
+                                                    (click)="onToggleMap()"
+                                                    >Mostrar Mapa</span
+                                                >
+                                                <span
+                                                    class="show-map-text show-map-mobile"
+                                                    (click)="
+                                                        onToggleMapMobile()
+                                                    "
+                                                    >Mostrar Mapa</span
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 p-0" *ngIf="!isElementBoat">
+                                    <div class="card-body-right">
+                                        <p class="card-body-services-title">
+                                            Servicios Destacados
+                                        </p>
+                                        <div
+                                            class="d-flex justify-content-between mb-3"
+                                        >
+                                            <div
+                                                class="d-flex flex-column justify-content-center align-items-center"
+                                                *ngFor="
+                                                    let service of inputElement.services.slice(
+                                                        0,
+                                                        5
+                                                    )
+                                                "
+                                            >
+                                                <i
+                                                    [classList]="[
+                                                        service.iconClass
+                                                    ]"
+                                                    style="
+                                                        color: rgba(
+                                                            4,
+                                                            45,
+                                                            98,
+                                                            0.58
+                                                        );
+                                                    "
+                                                    aria-hidden="true"
+                                                ></i>
+                                                <p
+                                                    class="card-body-services-description"
+                                                >
+                                                    {{ service.type }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="feature-service"
+                                            >Desayuno Incluido</span
+                                        >
+                                        <p class="card-body-price-title">
+                                            Precio x Noche
+                                        </p>
+                                        <p
+                                            class="card-body-price-description-text"
+                                        >
+                                            Desde
+                                            <span
+                                                class="card-body-price-description"
+                                            >
+                                                {{ inputElement.basePrice }}$
+                                            </span>
+                                            pp
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-5 p-0" *ngIf="isElementBoat">
+                                    <div class="card-body-right">
+                                        <p class="card-body-services-title">
+                                            Equipamiento
+                                        </p>
+                                        <div
+                                            class="d-flex mb-3"
+                                        >
+                                            <div
+                                                class="d-flex flex-column justify-content-center align-items-center ml-1"
+                                                *ngFor="
+                                                    let equipment of inputElement.equipment.slice(
+                                                        0,
+                                                        5
+                                                    )
+                                                "
+                                            >
+                                                <i
+                                                    [classList]="[
+                                                        equipment.iconClass
+                                                    ]"
+                                                    style="
+                                                        color: rgba(
+                                                            4,
+                                                            45,
+                                                            98,
+                                                            0.58
+                                                        );
+                                                    "
+                                                    aria-hidden="true"
+                                                ></i>
+                                                <p
+                                                    class="card-body-services-description"
+                                                >
+                                                    {{ equipment.type }}
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="feature-service"
+                                            >Personas: <b>{{ inputElement.numberPeople }}</b></span
+                                        >
+                                        <p class="card-body-price-title">
+                                            Precio x Día
+                                        </p>
+                                        <p
+                                            class="card-body-price-description-text"
+                                        >
+                                            <span
+                                                class="card-body-price-description"
+                                            >
+                                                {{ inputElement.basePrice }}$
+                                            </span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

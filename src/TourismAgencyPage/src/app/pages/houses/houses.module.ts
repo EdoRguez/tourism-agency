@@ -12,6 +12,9 @@ import { LoaderModule } from 'src/app/shared/modules/loader/loader.module';
 import { GalleryModule } from 'ng-gallery';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
+import { UiElementsModule } from 'src/app/shared/modules/ui-elements/ui-elements.module';
+import { HouseComponent } from './house/house.component';
+import { LightboxModule } from 'ng-gallery/lightbox';
 
 
 @NgModule({
@@ -21,7 +24,8 @@ import { RouterModule } from '@angular/router';
     HouseMapComponent,
     HouseFilterComponent,
     HouseItemComponent,
-    HousesComponent
+    HousesComponent,
+    HouseComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +33,9 @@ import { RouterModule } from '@angular/router';
     GalleryModule,
     LoaderModule,
     NgbNavModule,
-    RouterModule
+    RouterModule,
+    UiElementsModule,
+    LightboxModule
   ]
 })
 export class HousesModule { }

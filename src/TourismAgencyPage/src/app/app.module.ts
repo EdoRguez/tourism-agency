@@ -13,11 +13,12 @@ import { BoatsModule } from './pages/boats/boats.module';
 import { HttpClientModule } from '@angular/common/http';
 import { HousesModule } from './pages/houses/houses.module';
 import { ContactModule } from './pages/contact/contact.module';
+import { UiElementsModule } from './shared/modules/ui-elements/ui-elements.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +32,7 @@ import { ContactModule } from './pages/contact/contact.module';
     BoatsModule,
     HousesModule,
     ContactModule,
+    UiElementsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

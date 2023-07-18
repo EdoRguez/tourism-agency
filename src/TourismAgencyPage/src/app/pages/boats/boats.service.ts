@@ -8,15 +8,11 @@ import { environment } from 'src/environments/environment';
 })
 export class BoatsService {
     private API_URL: string = `${environment.apiUrl}/json/boats.json`;
+    mapUrl: string = '';
 
     private showMapSubject = new Subject<boolean>();
-    private toggleCardSubject = new Subject<number>();
 
     constructor(private _http: HttpClient) {}
-
-    get toggleCard$(): Observable<number> {
-        return this.toggleCardSubject.asObservable();
-    }
 
     get showMapAction$(): Observable<boolean> {
         return this.showMapSubject.asObservable();
@@ -24,10 +20,6 @@ export class BoatsService {
 
     toggleMap(value: boolean): void {
         this.showMapSubject.next(value);
-    }
-
-    toggleCard(id: number): void {
-        this.toggleCardSubject.next(id);
     }
 
     getBoat(id: number): Observable<any[]> {

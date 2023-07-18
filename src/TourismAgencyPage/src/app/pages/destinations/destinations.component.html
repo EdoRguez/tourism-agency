@@ -1,19 +1,21 @@
 <div class="main-box-destinations">
-    <!-- <div class="container">
-        <div class="row">
-            <div class="col-12 mt-2">
-                <app-destination-filter></app-destination-filter>
+    <div class="main-box-destinations-transparent">
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-12 mt-2">
+                    <app-destination-filter></app-destination-filter>
+                </div>
             </div>
-        </div>
-    </div> -->
-
-    <div [ngClass]="{'container-fluid': showMapRight, 'container': !showMapRight}">
-        <div class="row">
-            <div class="col-12" [ngClass]="{'col-md-8': showMapRight, 'col-md-12': !showMapRight}">
-                <app-destinations-list></app-destinations-list>
-            </div>
-            <div *ngIf="showMapRight" class="col-12 col-md-4 parent-destination-map">
-                <app-destination-map></app-destination-map>
+        </div> -->
+    
+        <div [ngClass]="{'container-fluid': showMapRight, 'container': !showMapRight}">
+            <div class="row">
+                <div class="col-12" [ngClass]="{'col-md-8': showMapRight, 'col-md-12': !showMapRight}">
+                    <app-destinations-list></app-destinations-list>
+                </div>
+                <div *ngIf="showMapRight" class="col-12 col-md-4 parent-destination-map">
+                    <app-destination-map></app-destination-map>
+                </div>
             </div>
         </div>
     </div>

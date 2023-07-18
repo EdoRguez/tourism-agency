@@ -1,0 +1,429 @@
+span,
+h1,
+h5,
+ul,
+li {
+    font-family: 'Montserrat', sans-serif;
+}
+
+::ng-deep #lightbox-myLightbox {
+    z-index: 1021;
+}
+
+.destination-title {
+    font-size: 28px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.main-box-destinations {
+    background-image: url('../../../../assets/images/houses/houses_background.JPG');
+    background-position: none;
+    background-position: bottom;
+    background-size: cover;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.main-box-destinations-transparent {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.main-information-box {
+    background-color: white;
+    border-radius: 25px;
+}
+
+.details-navbar {
+    background-color: white;
+    position: sticky;
+    top: 58px;
+    padding: 10px 0px 0px 0px;
+    z-index: 1;
+}
+
+.list-details-navbar {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-details-navbar > li {
+    list-style: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-size: .9rem;
+    transition: 0.2s;
+}
+
+.list-details-navbar > li:hover {
+    list-style: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+.dt-box-images {
+    padding: 10px;
+}
+
+.dt-image-box-2 {
+    padding: 0px 5px;
+}
+
+.dt-image-box-3 {
+    padding: 5px 5px 0px 5px;
+}
+
+.dt-image-box-5 {
+    padding: 5px 0px;
+}
+
+.dt-image {
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.dt-image-more {
+    background-color: #597ba2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dt-image-more > h1 {
+    font-family: "Wonderful";
+    color: white;
+    margin: 0px;
+    padding-top: 10px;
+    font-size: 2rem;
+}
+
+.dt-image-one-row {
+    height: 405px;
+}
+
+.dt-image-two-row {
+    height: 200px;
+}
+
+.dt-image-three-row {
+    height: 131px;
+}
+
+.dt-resume-check {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    width: 100%;
+    padding: 10px;
+}
+
+.resume-element-box {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 25px;
+    margin-left: 5px;
+    padding: 0px 10px;
+}
+
+.resume-text {
+    font-size: .8rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.resume-discount-title {
+    font-size: .9rem;
+    font-weight: bold;
+    color: #042D62;
+    font-family: "Montserrat", sans-serif;
+}
+
+.resume-discount-text {
+    text-decoration: underline;
+    color: #042D62;
+    font-size: .9rem;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.resume-discount-text:hover {
+    font-weight: bold;
+}
+
+.resume-destination-price {
+    color: #9bc9ea;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'League Spartan', sans-serif;
+    text-shadow: 2px 2px #042D62;
+}
+
+.services-destination {
+    color: #042D62;
+    font-size: .9rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.show-map-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #042D62;
+    text-decoration: underline;
+    font-size: .9rem;
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.show-map-text:hover {
+    color: black;
+}
+
+.show-map-mobile {
+    display: none;
+}
+
+.fa-map-marker-alt {
+    color: #042D62;
+}
+
+.services-title {
+    font-family: 'Montserrat', sans-serif;
+    color: #042D62;
+    font-weight: bold;
+    font-size: .9rem;
+    margin-top: 10px;
+}
+
+.service-item-description {
+    font-size: 14px;
+    color: rgba(4, 45, 98, .58);
+    font-size: .6rem;
+}
+
+.opinions-title {
+    color: #042D62;
+    font-size: .9rem;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.opinions-rating {
+    font-size: 1.3rem;
+    color: #042D62;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.star-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.reserve-btn {
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #efcb10, #986f18);
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    font-weight: bold;
+    padding: 15px 40px 10px 40px;
+    font-size: 2.3rem;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.reserve-btn:hover {
+
+    background-image: linear-gradient(to right, #986f18, #efcb10);
+}
+
+.description-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #042D62;
+}
+
+.description-text {
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+    text-align: justify;
+}
+
+.room-box {
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.room-image {
+    border-radius: 20px;
+}
+
+.room-information {
+    margin-top: 10px;
+}
+
+.room-information > span {
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+}
+
+.room-extra-bed-message {
+    font-weight: bold;
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.element-tab {
+    border-top: 1px solid rgba(0, 0, 0, .2);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.element-tab > span {
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.tab-box {
+    padding: 10px 30px;
+}
+
+.rating-general {
+    display: flex;
+    justify-content: space-between;
+}
+
+.star-opinion-icon {
+    width: 80px;
+}
+
+.star-opinion-icon-small {
+    width: 40px;
+}
+
+.rating-stars {
+    text-align: center;
+}
+
+.rating-stars > img {
+    margin: 0px 3px;
+}
+
+.rating-title {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #042D62;
+    text-transform: uppercase;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.rating-text {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #042D62;
+}
+
+.write-opinion-btn {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.write-opinion-btn:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.opinion-person-title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.opinion-person-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    padding-left: 15px;
+}
+
+.similar-title {
+    font-family: 'CheryRush', sans-serif;
+    font-size: 5.2rem;
+    color: white;
+}
+
+@media screen and (max-width: 767px) {
+    .dt-image-box-2 {
+        display: none;
+    }
+
+    .dt-image-box-1,
+    .dt-image-box-2,
+    .dt-image-box-3,
+    .dt-image-box-4,
+    .dt-image-box-5,
+    .dt-image-box-6
+    {
+        padding: 0px 0px 5px 0px;
+    }
+
+    .dt-image-one-row,
+    .dt-image-two-row,
+    .dt-image-three-row {
+        height: 250px;
+    }
+    
+    .dt-image-box-6 > .dt-image-three-row{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .similar-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .details-navbar {
+        white-space: nowrap;
+        overflow-x: scroll;
+        padding: 10px 0px 5px 0px;
+    }
+
+    .show-map-pc {
+        display: none;
+    }
+
+    .show-map-mobile {
+        display: block;
+        text-align: center;
+    }
+
+    .rating-general {
+        justify-content: center;
+    }
+}

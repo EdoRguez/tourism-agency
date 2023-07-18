@@ -13,6 +13,10 @@ import { BoatMapModalComponent } from './boat-map-modal/boat-map-modal.component
 import { BoatsListComponent } from './boats-list/boats-list.component';
 import { LoaderModule } from 'src/app/shared/modules/loader/loader.module';
 import { BoatItemComponent } from './boats-list/boat-item/boat-item.component';
+import { UiElementsModule } from 'src/app/shared/modules/ui-elements/ui-elements.module';
+import { BoatComponent } from './boat/boat.component';
+import { LightboxModule } from 'ng-gallery/lightbox';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -22,14 +26,18 @@ import { BoatItemComponent } from './boats-list/boat-item/boat-item.component';
     BoatMapComponent,
     BoatMapModalComponent,
     BoatsListComponent,
-    BoatItemComponent
+    BoatItemComponent,
+    BoatComponent
   ],
   imports: [
     CommonModule,
     BoatsRoutingModule,
     GalleryModule,
     NgbNavModule,
-    LoaderModule
+    LightboxModule,
+    LoaderModule,
+    RouterModule,
+    UiElementsModule
   ]
 })
 export class BoatsModule { }

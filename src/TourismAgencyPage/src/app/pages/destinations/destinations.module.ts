@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { DestinationsRoutingModule } from './destinations-routing.module';
 
-import { GalleryModule } from  'ng-gallery';
+import { GalleryModule } from 'ng-gallery';
+import { LightboxModule } from 'ng-gallery/lightbox';
 import { NgbNavModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { DestinationsComponent } from './destinations.component';
@@ -15,6 +16,7 @@ import { DestinationMapModalComponent } from './destination-map-modal/destinatio
 import { LoaderModule } from 'src/app/shared/modules/loader/loader.module';
 import { RouterModule } from '@angular/router';
 import { DestinationComponent } from './destination/destination.component';
+import { UiElementsModule } from 'src/app/shared/modules/ui-elements/ui-elements.module';
 
 
 @NgModule({
@@ -32,8 +34,10 @@ import { DestinationComponent } from './destination/destination.component';
     DestinationsRoutingModule,
     GalleryModule,
     NgbNavModule,
+    LightboxModule,
     LoaderModule,
-    RouterModule
+    RouterModule,
+    UiElementsModule
   ]
 })
 export class DestinationsModule { }

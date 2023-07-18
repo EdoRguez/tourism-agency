@@ -14,6 +14,17 @@
        url('assets/fonts/GentyDemo-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: "Wonderful";
+  src: url('assets/fonts/WonderfulBranding.otf') format('otf'),
+       url('assets/fonts/WonderfulBranding.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: "CheryRush";
+  src: url('assets/fonts/CheryRush-Regular.ttf') format('truetype');
+}
+
 body {
     background-color: white;
 }

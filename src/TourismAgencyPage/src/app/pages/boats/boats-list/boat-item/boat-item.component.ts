@@ -3,59 +3,36 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { GalleryItem, ImageItem } from 'ng-gallery';
 import { BoatMapComponent } from '../../boat-map/boat-map.component';
 import { BoatsService } from '../../boats.service';
+import { Constants } from 'src/app/core/constants/contants';
+import { BoatMapModalComponent } from '../../boat-map-modal/boat-map-modal.component';
 
 @Component({
     selector: 'app-boat-item',
     templateUrl: './boat-item.component.html',
     styleUrls: ['./boat-item.component.scss'],
 })
-export class BoatItemComponent implements OnInit {
+export class BoatItemComponent {
     @Input() boat: any;
 
-    isCardOpened: boolean = false;
-    isMapOpened: boolean = false;
-
-    activeTab = 1;
     images: GalleryItem[] = [];
 
     constructor(
-        private boatService: BoatsService,
+        private _boatService: BoatsService,
         private modalService: NgbModal
     ) {}
 
-    ngOnInit(): void {
-        for (let i = 0; i < this.boat.imagesUrl.length; i++) {
-            this.images.push(
-                new ImageItem({
-                    src: this.boat.imagesUrl[i],
-                    thumb: this.boat.imagesUrl[i],
-                })
-            );
-        }
-
-        this.boatService.toggleCard$.subscribe({
-            next: (idBoat: number) => {
-                if (idBoat !== this.boat.id) this.isCardOpened = false;
-            },
-        });
-    }
-
-    onToggleMap(): void {
-        this.isMapOpened = !this.isMapOpened;
-        this.boatService.toggleMap(this.isMapOpened);
-    }
-
-    onToggleMapMobile(): void {
-        const modalRef = this.modalService.open(BoatMapComponent);
-    }
-
-    onToggleCardDetails(event: Event, boatId: number): void {
-        if (
-            (event.target as Element).className.indexOf('show-map-btn') === -1
-        ) {
-            this.isCardOpened = !this.isCardOpened;
-            this.boatService.toggleCard(boatId);
-            this.activeTab = 1;
+    onToggleMap(mapType: string): void {
+        if(mapType === Constants.MapComputer) {
+            this._boatService.mapUrl = this.boat.googleMapLocation;
+            window.scroll({
+                top: 0,
+                left: 0,
+                behavior: 'smooth',
+            });
+            this._boatService.toggleMap(true);
+        } else {
+            this._boatService.mapUrl = this.boat.googleMapLocation;
+            const modalRef = this.modalService.open(BoatMapModalComponent);
         }
     }
 }

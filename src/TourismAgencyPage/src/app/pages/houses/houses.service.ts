@@ -11,13 +11,8 @@ export class HousesService {
     mapUrl: string = '';
 
     private showMapSubject = new Subject<boolean>();
-    private toggleCardSubject = new Subject<number>();
 
     constructor(private _http: HttpClient) {}
-
-    get toggleCard$(): Observable<number> {
-        return this.toggleCardSubject.asObservable();
-    }
 
     get showMapAction$(): Observable<boolean> {
         return this.showMapSubject.asObservable();
@@ -25,10 +20,6 @@ export class HousesService {
 
     toggleMap(value: boolean): void {
         this.showMapSubject.next(value);
-    }
-
-    toggleCard(id: number): void {
-        this.toggleCardSubject.next(id);
     }
 
     getHouse(id: number): Observable<any[]> {

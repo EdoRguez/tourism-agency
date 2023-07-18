@@ -42,6 +42,7 @@
     font-weight: bold;
     font-size: 20px;
     margin: 0px;
+    text-transform: uppercase;
 }
 
 .service-section-title-2 {
@@ -54,7 +55,7 @@
 .service-section-text {
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .btn-carousel {
@@ -112,16 +113,16 @@
 .home-about-title {
     font-family: 'Playfair Display', serif;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-    color: #042D62;
+    font-size: 30px;
+    color: white;
     margin: 40px 0px 20px 0px;
 }
 
-.home-about-description {
+.home-about-description,
+.home-about-list > li {
     font-family: 'Montserrat', sans-serif;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .btn-home-about {
@@ -144,6 +145,7 @@
     color: #042D62;
     font-weight: bold;
     font-size: 20px;
+    text-transform: uppercase;
 }
 
 .home-ul {
@@ -156,8 +158,8 @@
 
 .home-ul li a {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    color: black;
+    font-size: 16px;
+    color: #042D62;
 }
 
 .home-ul li::before {
@@ -174,6 +176,7 @@
     font-weight: bold;
     font-size: 20px;
     margin: 0px;
+    text-transform: uppercase;
 }
 
 .activities-box {

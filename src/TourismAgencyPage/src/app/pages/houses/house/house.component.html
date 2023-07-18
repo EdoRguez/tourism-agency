@@ -1,0 +1,315 @@
+<div class="main-box-destinations" *ngIf="house">
+    <div class="main-box-destinations-transparent">
+        <div class="container">
+            <div class="row" #gallery>
+                <div class="col-12 mt-3">
+                    <div class="main-information-box mb-4">
+                        <!-- <button class="btn btn-main" [routerLink]="['..']">
+                            <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                            <span class="ml-1">Regresar</span>
+                        </button> -->
+                        <!-- <div *ngIf="images.length > 0">
+                            <gallery
+                                [items]="images"
+                                thumbPosition="bottom"
+                            ></gallery>
+                        </div> -->
+                        
+                        <div class="dt-box-images" *ngIf="house.imagesUrl.length > 0">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-12 col-md-5 p-0">
+                                        <div class="dt-image-box-1">
+                                            <div
+                                                class="dt-image dt-image-one-row"
+                                                [ngStyle]="{ 'background-image': 'url(' + house.imagesUrl[0] + ')' }"
+                                                (click)="openInFullScreen(0)"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 p-0">
+                                        <div class="dt-image-box-2">
+                                            <div
+                                                class="dt-image dt-image-two-row"
+                                                [ngStyle]="{ 'background-image': 'url(' + house.imagesUrl[1] + ')' }"
+                                                (click)="openInFullScreen(1)"
+                                            ></div>
+                                        </div>
+                                        <div class="dt-image-box-3">
+                                            <div
+                                                class="dt-image dt-image-two-row"
+                                                [ngStyle]="{ 'background-image': 'url(' + house.imagesUrl[2] + ')' }"
+                                                (click)="openInFullScreen(2)"
+                                            ></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-3 p-0">
+                                        <div class="dt-image-box-4">
+                                            <div
+                                                class="dt-image dt-image-three-row"
+                                                [ngStyle]="{ 'background-image': 'url(' + house.imagesUrl[3] + ')' }"
+                                                (click)="openInFullScreen(3)"
+                                            ></div>
+                                        </div>
+                                        <div class="dt-image-box-5">
+                                            <div
+                                                class="dt-image dt-image-three-row"
+                                                [ngStyle]="{ 'background-image': 'url(' + house.imagesUrl[4] + ')' }"
+                                                (click)="openInFullScreen(4)"
+                                            ></div>
+                                        </div>
+                                        <div class="dt-image-box-6">
+                                            <div 
+                                                class="dt-image dt-image-more dt-image-three-row"
+                                                (click)="openInFullScreen(0)"
+                                            >
+                                                <h1>+</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="details-navbar">
+                            <ul class="list-details-navbar">
+                                <li (click)="scroll(gallery)">Galería</li>
+                                <li (click)="scroll(resume)">Información</li>
+                                <li (click)="scroll(resume)">Habitaciones</li>
+                                <li (click)="scroll(services)">Servicios</li>
+                                <li (click)="scroll(resume)">Preguntas Frecuentes</li>
+                            </ul>
+                        </div>
+
+                        <div class="container">
+                            <div class="row" #resume>
+                                <div class="col-12 col-md-5 mt-4">
+                                    <div class="d-flex justify-content-center">
+                                        <img src="assets/images/posada_palma_dorada/palma_dorada_logo.png" >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-7 mt-4">
+                                    <div class="dt-resume-check">
+                                        <div class="row">
+                                            <div class="col-12 col-md-4">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <span class="resume-text text-uppercase">Check-In</span>
+                                                    <div class="resume-element-box">
+                                                        <span class="resume-text">24 Abril</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <span class="resume-text text-uppercase">Check-Out</span>
+                                                    <div class="resume-element-box">
+                                                        <span class="resume-text">29 Abril</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-4">
+                                                <div class="d-flex align-items-center justify-content-center">
+                                                    <span class="resume-text text-uppercase">Huéspedes</span>
+                                                    <div class="resume-element-box">
+                                                        <span class="resume-text">2</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 mt-4">
+                                                <div class="d-flex flex-column align-items-center">
+                                                    <div class="d-flex align-items-center">
+                                                        <span class="resume-discount-title">Wacho</span>
+                                                        <div class="resume-element-box">
+                                                            <span class="resume-text">000123</span>
+                                                        </div>
+                                                    </div>
+                                                    <span class="resume-discount-text">Applicar Descuento</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 mt-4">
+                                                <div class="d-flex justify-content-center">
+                                                    <span class="resume-destination-price">{{ house.basePrice }}$</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container mt-3">
+                            <div class="row" #services>
+                                <div class="col-12 col-md-4">
+                                    <div class="d-flex align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                            <span class="services-destination ml-1">
+                                                {{ house.destination }}
+                                            </span>
+                                        </div>
+                                        <span class="show-map-text show-map-pc">Mostrar Mapa</span>
+                                        <span class="show-map-text show-map-mobile">Mostrar Mapa</span>
+                                    </div>
+                                    <div class="mt-3">
+                                        <span class="services-title">Servicios Destacados</span>
+                                        <div class="d-flex justify-content-between mt-3">
+                                            <div
+                                                class="d-flex flex-column justify-content-center align-items-center"
+                                                *ngFor="
+                                                    let service of house.services.slice(
+                                                        0,
+                                                        5
+                                                    )
+                                                "
+                                            >
+                                                <i
+                                                    [classList]="[service.iconClass]"
+                                                    style="color: rgba(4, 45, 98, .58)"
+                                                    aria-hidden="true"
+                                                ></i>
+                                                <span class="service-item-description">
+                                                    {{ service.type }}
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 mt-3">
+                                    <div class="d-flex flex-column align-items-center">
+                                        <span class="opinions-title">Opiniones de otros clientes</span>
+                                        <div class="d-flex align-items-center mt-2">
+                                            <img src="assets/images/icons/star.png" class="star-icon">
+                                            <span class="opinions-rating ml-1">4.5 / 5</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 mt-3">
+                                    <div class="d-flex justify-content-center">
+                                        <span class="reserve-btn">Reservar</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container mt-3">
+                            <span class="description-title">Información</span>
+                            <p class="description-text">{{ house.description }}</p>
+                            <span class="description-title">Habitaciones</span>
+                            <p class="description-text">Servicios en habitaciones: Artículos de aseo gratis, Caja fuerte, ducha, Toallas, Ropa de cama, Enchufe cerca de la cama, TV, Nevera, Canales vía satélite, Plancha para ropa, Secador de pelo y Armario</p>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12 col-md-3 offset-md-1">
+                                    <div class="room-box">
+                                        <img src="assets/images/posada_palma_dorada/palma_17.JPG" class="room-image img-fluid">
+                                        <div class="room-information d-flex flex-column align-items-center">
+                                            <span class="font-weight-bold">SUITE</span>
+                                            <span>Capacidad: 2</span>
+                                            <span>Precio por noche: Desde 100$</span>
+                                            <span>Servicios</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="room-box">
+                                        <img src="assets/images/posada_palma_dorada/palma_17.JPG" class="room-image img-fluid">
+                                        <div class="room-information d-flex flex-column align-items-center">
+                                            <span class="font-weight-bold">DOBLE</span>
+                                            <span>Capacidad: 4</span>
+                                            <span>Precio por noche: Desde 150$</span>
+                                            <span>Servicios</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <div class="room-box">
+                                        <img src="assets/images/posada_palma_dorada/palma_17.JPG" class="room-image img-fluid">
+                                        <div class="room-information d-flex flex-column align-items-center">
+                                            <span class="font-weight-bold">FAMILIAR</span>
+                                            <span>Capacidad: 6</span>
+                                            <span>Precio por noche: Desde 200$</span>
+                                            <span>Servicios</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <span class="room-extra-bed-message">La posada te facilita una cama extra en la habitación si la capacidad se excede por una persona</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid mt-4">
+                            <div class="row">
+                                <div class="col-12 col-md-6 p-0">
+                                    <div class="element-tab" style="background-color: rgba(0,0,0,.1);">
+                                        <span>Preguntas Frecuentes</span>
+                                    </div>
+                                    <div class="tab-box">
+                                        <span class="rating-title">Clientes</span>
+                                        <div class="row">
+                                            <div class="col-12 col-md-6">
+                                                <div class="rating-general">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="assets/images/icons/star.png" class="star-opinion-icon">
+                                                        <span class="rating-text">4.5/5</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6">
+                                                <div class="d-flex flex-column mt-3">
+                                                    <div class="rating-stars">
+                                                        <img src="assets/images/icons/star.png" class="star-opinion-icon-small">
+                                                        <img src="assets/images/icons/star.png" class="star-opinion-icon-small">
+                                                        <img src="assets/images/icons/star.png" class="star-opinion-icon-small">
+                                                        <img src="assets/images/icons/star.png" class="star-opinion-icon-small">
+                                                        <img src="assets/images/icons/star.png" class="star-opinion-icon-small">
+                                                    </div>
+                                                    <button class="btn write-opinion-btn">Escribir Opinión</button>
+                                                </div>    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 p-0">
+                                    <div class="element-tab">
+                                        <span>Opiniones</span>
+                                    </div>
+                                    <div class="tab-box">
+                                        <div class="d-flex flex-column mt-2">
+                                            <span class="opinion-person-title">Rafael</span>
+                                            <span class="opinion-person-description">"Llevé a mi familia en mi visita a Venezuela, volveré!"</span>
+                                        </div>
+                                        <div class="d-flex flex-column mt-2">
+                                            <span class="opinion-person-title">Antonio</span>
+                                            <span class="opinion-person-description">"Excelente servicio, unas vacaciones inolvidables"</span>
+                                        </div>
+                                        <div class="d-flex flex-column mt-2">
+                                            <span class="opinion-person-title">Rafael</span>
+                                            <span class="opinion-person-description">"La mejor noche en el chiringuito"</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 similar-box">
+                    <span class="similar-title">Similares</span>
+                </div>
+                <div class="col-12 col-lg-4 mt-3 d-flex justify-content-center">
+                    <app-card-element [data]="house"></app-card-element>
+                </div>
+                <div class="col-12 col-lg-4 mt-3 d-flex justify-content-center">
+                    <app-card-element [data]="house"></app-card-element>
+                </div>
+                <div class="col-12 col-lg-4 mt-3 d-flex justify-content-center">
+                    <app-card-element [data]="house"></app-card-element>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+</div>
