@@ -9,11 +9,6 @@
 
 <h4 align="center">Tourism agency page built with .NET and Angular.</h4>
 
-<p align="center">
-  <a href="#key-features">Key Features</a> •
-  <a href="#built-with">Built With</a>
-</p>
-
 <div align="center">
   <img src="https://github.com/EdoRguez/tourism-agency/blob/master/assets/page.gif" alt="Markdownify" width="720">
 </div>
