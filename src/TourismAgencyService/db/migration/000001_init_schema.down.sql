@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS boats;
+DROP TABLE IF EXISTS boat_types;
+DROP TABLE IF EXISTS destinations;
