@@ -9,16 +9,11 @@ import (
 )
 
 type Querier interface {
+	CreateBoat(ctx context.Context, arg CreateBoatParams) (Boat, error)
+	DeleteBoat(ctx context.Context, id int32) error
 	GetAllBoats(ctx context.Context, arg GetAllBoatsParams) ([]Boat, error)
-	// -- name: CreateBoat :one
-	// INSERT INTO Boats (
-	//   owner,
-	//   balance,
-	//   currency
-	// ) VALUES (
-	//   $1, $2, $3
-	// ) RETURNING *;
 	GetBoat(ctx context.Context, id int32) (Boat, error)
+	UpdateBoat(ctx context.Context, arg UpdateBoatParams) (Boat, error)
 }
 
 var _ Querier = (*Queries)(nil)

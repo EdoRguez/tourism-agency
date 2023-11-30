@@ -12,10 +12,10 @@ type Boat struct {
 	ID            int32              `json:"id"`
 	Name          string             `json:"name"`
 	Description   string             `json:"description"`
-	NumberPeople  int16              `json:"numberPeople"`
-	MainImageURL  string             `json:"mainImageURL"`
-	BasePrice     pgtype.Numeric     `json:"basePrice"`
-	IDBoatType    int32              `json:"id_boatType"`
+	NumberPeople  int16              `json:"number_people"`
+	MainImageUrl  string             `json:"main_image_url"`
+	BasePrice     pgtype.Numeric     `json:"base_price"`
+	IDBoatType    int32              `json:"id_boat_type"`
 	IDDestination int32              `json:"id_destination"`
 	CreatedAt     pgtype.Timestamptz `json:"created_At"`
 }

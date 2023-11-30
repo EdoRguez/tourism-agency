@@ -7,10 +7,71 @@ package db
 
 import (
 	"context"
+
+	"github.com/jackc/pgx/v5/pgtype"
 )
 
+const createBoat = `-- name: CreateBoat :one
+INSERT INTO boats (
+  name,
+  description,
+  number_people,
+  main_image_url,
+  base_price,
+  id_boat_type,
+  id_destination
+) VALUES (
+  $1, $2, $3, $4, $5, $6, $7
+) RETURNING id, name, description, number_people, main_image_url, base_price, id_boat_type, id_destination, "created_At"
+`
+
+type CreateBoatParams struct {
+	Name          string         `json:"name"`
+	Description   string         `json:"description"`
+	NumberPeople  int16          `json:"number_people"`
+	MainImageUrl  string         `json:"main_image_url"`
+	BasePrice     pgtype.Numeric `json:"base_price"`
+	IDBoatType    int32          `json:"id_boat_type"`
+	IDDestination int32          `json:"id_destination"`
+}
+
+func (q *Queries) CreateBoat(ctx context.Context, arg CreateBoatParams) (Boat, error) {
+	row := q.db.QueryRow(ctx, createBoat,
+		arg.Name,
+		arg.Description,
+		arg.NumberPeople,
+		arg.MainImageUrl,
+		arg.BasePrice,
+		arg.IDBoatType,
+		arg.IDDestination,
+	)
+	var i Boat
+	err := row.Scan(
+		&i.ID,
+		&i.Name,
+		&i.Description,
+		&i.NumberPeople,
+		&i.MainImageUrl,
+		&i.BasePrice,
+		&i.IDBoatType,
+		&i.IDDestination,
+		&i.CreatedAt,
+	)
+	return i, err
+}
+
+const deleteBoat = `-- name: DeleteBoat :exec
+DELETE FROM boats
+WHERE id = $1
+`
+
+func (q *Queries) DeleteBoat(ctx context.Context, id int32) error {
+	_, err := q.db.Exec(ctx, deleteBoat, id)
+	return err
+}
+
 const getAllBoats = `-- name: GetAllBoats :many
-SELECT id, name, description, "numberPeople", "mainImageURL", "basePrice", "id_boatType", id_destination, "created_At" FROM boats
+SELECT id, name, description, number_people, main_image_url, base_price, id_boat_type, id_destination, "created_At" FROM boats
 ORDER BY id
 LIMIT $1
 OFFSET $2
@@ -35,7 +96,7 @@ func (q *Queries) GetAllBoats(ctx context.Context, arg GetAllBoatsParams) ([]Boa
 			&i.Name,
 			&i.Description,
 			&i.NumberPeople,
-			&i.MainImageURL,
+			&i.MainImageUrl,
 			&i.BasePrice,
 			&i.IDBoatType,
 			&i.IDDestination,
@@ -52,23 +113,10 @@ func (q *Queries) GetAllBoats(ctx context.Context, arg GetAllBoatsParams) ([]Boa
 }
 
 const getBoat = `-- name: GetBoat :one
-
-SELECT id, name, description, "numberPeople", "mainImageURL", "basePrice", "id_boatType", id_destination, "created_At" FROM boats
+SELECT id, name, description, number_people, main_image_url, base_price, id_boat_type, id_destination, "created_At" FROM boats
 WHERE id = $1 LIMIT 1
 `
 
-// -- name: CreateBoat :one
-// INSERT INTO Boats (
-//
-//	owner,
-//	balance,
-//	currency
-//
-// ) VALUES (
-//
-//	$1, $2, $3
-//
-// ) RETURNING *;
 func (q *Queries) GetBoat(ctx context.Context, id int32) (Boat, error) {
 	row := q.db.QueryRow(ctx, getBoat, id)
 	var i Boat
@@ -77,7 +125,58 @@ func (q *Queries) GetBoat(ctx context.Context, id int32) (Boat, error) {
 		&i.Name,
 		&i.Description,
 		&i.NumberPeople,
-		&i.MainImageURL,
+		&i.MainImageUrl,
+		&i.BasePrice,
+		&i.IDBoatType,
+		&i.IDDestination,
+		&i.CreatedAt,
+	)
+	return i, err
+}
+
+const updateBoat = `-- name: UpdateBoat :one
+UPDATE boats
+SET 
+    name = $2,
+    description = $3,
+    number_people = $4,
+    main_image_url = $5,
+    base_price = $6,
+    id_boat_type = $7,
+    id_destination = $8
+WHERE id = $1
+RETURNING id, name, description, number_people, main_image_url, base_price, id_boat_type, id_destination, "created_At"
+`
+
+type UpdateBoatParams struct {
+	ID            int32          `json:"id"`
+	Name          string         `json:"name"`
+	Description   string         `json:"description"`
+	NumberPeople  int16          `json:"number_people"`
+	MainImageUrl  string         `json:"main_image_url"`
+	BasePrice     pgtype.Numeric `json:"base_price"`
+	IDBoatType    int32          `json:"id_boat_type"`
+	IDDestination int32          `json:"id_destination"`
+}
+
+func (q *Queries) UpdateBoat(ctx context.Context, arg UpdateBoatParams) (Boat, error) {
+	row := q.db.QueryRow(ctx, updateBoat,
+		arg.ID,
+		arg.Name,
+		arg.Description,
+		arg.NumberPeople,
+		arg.MainImageUrl,
+		arg.BasePrice,
+		arg.IDBoatType,
+		arg.IDDestination,
+	)
+	var i Boat
+	err := row.Scan(
+		&i.ID,
+		&i.Name,
+		&i.Description,
+		&i.NumberPeople,
+		&i.MainImageUrl,
 		&i.BasePrice,
 		&i.IDBoatType,
 		&i.IDDestination,

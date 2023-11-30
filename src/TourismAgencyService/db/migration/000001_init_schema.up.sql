@@ -14,10 +14,10 @@ CREATE TABLE boats (
     "id" SERIAL PRIMARY KEY,
     "name" VARCHAR(50) NOT NULL,
     "description" VARCHAR(200) NOT NULL,
-    "numberPeople" SMALLINT NOT NULL,
-    "mainImageURL" VARCHAR NOT NULL,
-    "basePrice" DECIMAL(16,2) NOT NULL,
-    "id_boatType" INT NOT NULL REFERENCES "boat_types"("id"),
+    "number_people" SMALLINT NOT NULL,
+    "main_image_url" VARCHAR NOT NULL,
+    "base_price" DECIMAL(16,2) NOT NULL,
+    "id_boat_type" INT NOT NULL REFERENCES "boat_types"("id"),
     "id_destination" INT NOT NULL REFERENCES "destinations"("id"),
     "created_At" TIMESTAMPTZ NOT NULL DEFAULT (now())
 );
