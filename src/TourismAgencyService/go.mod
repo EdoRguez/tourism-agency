@@ -2,11 +2,13 @@ module github.com/EdoRguez/tourism-agency/TourismAgencyService
 
 go 1.21.4
 
-require github.com/jackc/pgx/v5 v5.5.0
+require (
+	github.com/jackc/pgx/v5 v5.5.0
+	github.com/spf13/viper v1.17.0
+)
 
 require (
 	github.com/fsnotify/fsnotify v1.6.0 // indirect
-	github.com/gorilla/mux v1.8.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/jackc/pgpassfile v1.0.0 // indirect
 	github.com/jackc/pgservicefile v0.0.0-20221227161230-091c0ba34f0a // indirect
@@ -19,7 +21,6 @@ require (
 	github.com/spf13/afero v1.10.0 // indirect
 	github.com/spf13/cast v1.5.1 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
-	github.com/spf13/viper v1.17.0 // indirect
 	github.com/subosito/gotenv v1.6.0 // indirect
 	go.uber.org/atomic v1.9.0 // indirect
 	go.uber.org/multierr v1.9.0 // indirect
