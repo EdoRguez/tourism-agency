@@ -7,8 +7,6 @@ package db
 
 import (
 	"context"
-
-	"github.com/jackc/pgx/v5/pgtype"
 )
 
 const createBoat = `-- name: CreateBoat :one
@@ -26,17 +24,17 @@ INSERT INTO boats (
 `
 
 type CreateBoatParams struct {
-	Name          string         `json:"name"`
-	Description   string         `json:"description"`
-	NumberPeople  int16          `json:"number_people"`
-	MainImageUrl  string         `json:"main_image_url"`
-	BasePrice     pgtype.Numeric `json:"base_price"`
-	IDBoatType    int32          `json:"id_boat_type"`
-	IDDestination int32          `json:"id_destination"`
+	Name          string `json:"name"`
+	Description   string `json:"description"`
+	NumberPeople  int16  `json:"number_people"`
+	MainImageUrl  string `json:"main_image_url"`
+	BasePrice     string `json:"base_price"`
+	IDBoatType    int32  `json:"id_boat_type"`
+	IDDestination int32  `json:"id_destination"`
 }
 
 func (q *Queries) CreateBoat(ctx context.Context, arg CreateBoatParams) (Boat, error) {
-	row := q.db.QueryRow(ctx, createBoat,
+	row := q.db.QueryRowContext(ctx, createBoat,
 		arg.Name,
 		arg.Description,
 		arg.NumberPeople,
@@ -66,7 +64,7 @@ WHERE id = $1
 `
 
 func (q *Queries) DeleteBoat(ctx context.Context, id int32) error {
-	_, err := q.db.Exec(ctx, deleteBoat, id)
+	_, err := q.db.ExecContext(ctx, deleteBoat, id)
 	return err
 }
 
@@ -83,7 +81,7 @@ type GetAllBoatsParams struct {
 }
 
 func (q *Queries) GetAllBoats(ctx context.Context, arg GetAllBoatsParams) ([]Boat, error) {
-	rows, err := q.db.Query(ctx, getAllBoats, arg.Limit, arg.Offset)
+	rows, err := q.db.QueryContext(ctx, getAllBoats, arg.Limit, arg.Offset)
 	if err != nil {
 		return nil, err
 	}
@@ -106,6 +104,9 @@ func (q *Queries) GetAllBoats(ctx context.Context, arg GetAllBoatsParams) ([]Boa
 		}
 		items = append(items, i)
 	}
+	if err := rows.Close(); err != nil {
+		return nil, err
+	}
 	if err := rows.Err(); err != nil {
 		return nil, err
 	}
@@ -118,7 +119,7 @@ WHERE id = $1 LIMIT 1
 `
 
 func (q *Queries) GetBoat(ctx context.Context, id int32) (Boat, error) {
-	row := q.db.QueryRow(ctx, getBoat, id)
+	row := q.db.QueryRowContext(ctx, getBoat, id)
 	var i Boat
 	err := row.Scan(
 		&i.ID,
@@ -149,18 +150,18 @@ RETURNING id, name, description, number_people, main_image_url, base_price, id_b
 `
 
 type UpdateBoatParams struct {
-	ID            int32          `json:"id"`
-	Name          string         `json:"name"`
-	Description   string         `json:"description"`
-	NumberPeople  int16          `json:"number_people"`
-	MainImageUrl  string         `json:"main_image_url"`
-	BasePrice     pgtype.Numeric `json:"base_price"`
-	IDBoatType    int32          `json:"id_boat_type"`
-	IDDestination int32          `json:"id_destination"`
+	ID            int32  `json:"id"`
+	Name          string `json:"name"`
+	Description   string `json:"description"`
+	NumberPeople  int16  `json:"number_people"`
+	MainImageUrl  string `json:"main_image_url"`
+	BasePrice     string `json:"base_price"`
+	IDBoatType    int32  `json:"id_boat_type"`
+	IDDestination int32  `json:"id_destination"`
 }
 
 func (q *Queries) UpdateBoat(ctx context.Context, arg UpdateBoatParams) (Boat, error) {
-	row := q.db.QueryRow(ctx, updateBoat,
+	row := q.db.QueryRowContext(ctx, updateBoat,
 		arg.ID,
 		arg.Name,
 		arg.Description,

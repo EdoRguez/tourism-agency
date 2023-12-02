@@ -5,29 +5,29 @@
 package db
 
 import (
-	"github.com/jackc/pgx/v5/pgtype"
+	"time"
 )
 
 type Boat struct {
-	ID            int32              `json:"id"`
-	Name          string             `json:"name"`
-	Description   string             `json:"description"`
-	NumberPeople  int16              `json:"number_people"`
-	MainImageUrl  string             `json:"main_image_url"`
-	BasePrice     pgtype.Numeric     `json:"base_price"`
-	IDBoatType    int32              `json:"id_boat_type"`
-	IDDestination int32              `json:"id_destination"`
-	CreatedAt     pgtype.Timestamptz `json:"created_At"`
+	ID            int32     `json:"id"`
+	Name          string    `json:"name"`
+	Description   string    `json:"description"`
+	NumberPeople  int16     `json:"number_people"`
+	MainImageUrl  string    `json:"main_image_url"`
+	BasePrice     string    `json:"base_price"`
+	IDBoatType    int32     `json:"id_boat_type"`
+	IDDestination int32     `json:"id_destination"`
+	CreatedAt     time.Time `json:"created_At"`
 }
 
 type BoatType struct {
-	ID        int32              `json:"id"`
-	Name      string             `json:"name"`
-	CreatedAt pgtype.Timestamptz `json:"created_at"`
+	ID        int32     `json:"id"`
+	Name      string    `json:"name"`
+	CreatedAt time.Time `json:"created_at"`
 }
 
 type Destination struct {
-	ID        int32              `json:"id"`
-	Name      string             `json:"name"`
-	CreatedAt pgtype.Timestamptz `json:"created_at"`
+	ID        int32     `json:"id"`
+	Name      string    `json:"name"`
+	CreatedAt time.Time `json:"created_at"`
 }

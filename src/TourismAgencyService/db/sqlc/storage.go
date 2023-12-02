@@ -2,18 +2,17 @@ package db
 
 import (
 	"context"
+	"database/sql"
 	"fmt"
-
-	"github.com/jackc/pgx/v5/pgxpool"
 )
 
 type SQLStorage struct {
-	connPool *pgxpool.Pool
 	*Queries
+	db *sql.DB
 }
 
-func (storage *SQLStorage) execTx(ctx context.Context, fn func(*Queries) error) error {
-	tx, err := storage.connPool.Begin(ctx)
+func (storage *SQLStorage) ExecTx(ctx context.Context, fn func(*Queries) error) error {
+	tx, err := storage.db.BeginTx(ctx, nil)
 	if err != nil {
 		return err
 	}
@@ -21,18 +20,18 @@ func (storage *SQLStorage) execTx(ctx context.Context, fn func(*Queries) error) 
 	q := New(tx)
 	err = fn(q)
 	if err != nil {
-		if rbErr := tx.Rollback(ctx); rbErr != nil {
+		if rbErr := tx.Rollback(); rbErr != nil {
 			return fmt.Errorf("tx err: %v, rb err: %v", err, rbErr)
 		}
 		return err
 	}
 
-	return tx.Commit(ctx)
+	return tx.Commit()
 }
 
-func NewStorage(connPool *pgxpool.Pool) *SQLStorage {
+func NewStorage(db *sql.DB) *SQLStorage {
 	return &SQLStorage{
-		connPool: connPool,
-		Queries:  New(connPool),
+		db:      db,
+		Queries: New(db),
 	}
 }

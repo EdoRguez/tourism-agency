@@ -13,38 +13,12 @@ type BoatRepo struct {
 func (boatRepo *BoatRepo) CreateBoat(ctx context.Context, arg db.CreateBoatParams) (db.Boat, error) {
 	var result db.Boat
 
-	err := boatRepo.SQLStorage.execTx(ctx, func(q *Queries) error {
+	err := boatRepo.SQLStorage.ExecTx(ctx, func(q *db.Queries) error {
 		var err error
 
-		result.Transfer, err = q.CreateTransfer(ctx, CreateTransferParams{
-			FromAccountID: arg.FromAccountID,
-			ToAccountID:   arg.ToAccountID,
-			Amount:        arg.Amount,
-		})
+		result, err = q.CreateBoat(ctx, arg)
 		if err != nil {
 			return err
-		}
-
-		result.FromEntry, err = q.CreateEntry(ctx, CreateEntryParams{
-			AccountID: arg.FromAccountID,
-			Amount:    -arg.Amount,
-		})
-		if err != nil {
-			return err
-		}
-
-		result.ToEntry, err = q.CreateEntry(ctx, CreateEntryParams{
-			AccountID: arg.ToAccountID,
-			Amount:    arg.Amount,
-		})
-		if err != nil {
-			return err
-		}
-
-		if arg.FromAccountID < arg.ToAccountID {
-			result.FromAccount, result.ToAccount, err = addMoney(ctx, q, arg.FromAccountID, -arg.Amount, arg.ToAccountID, arg.Amount)
-		} else {
-			result.ToAccount, result.FromAccount, err = addMoney(ctx, q, arg.ToAccountID, arg.Amount, arg.FromAccountID, -arg.Amount)
 		}
 
 		return err
