@@ -1,4 +1,4 @@
-package respository
+package repository
 
 import (
 	"context"
@@ -8,6 +8,12 @@ import (
 
 type BoatRepo struct {
 	SQLStorage *db.SQLStorage
+}
+
+func NewBoatRepo(sql *db.SQLStorage) *BoatRepo {
+	return &BoatRepo{
+		SQLStorage: sql,
+	}
 }
 
 func (boatRepo *BoatRepo) CreateBoat(ctx context.Context, arg db.CreateBoatParams) (db.Boat, error) {

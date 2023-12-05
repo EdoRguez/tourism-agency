@@ -1,5 +1,8 @@
 run:
-	cd cmd; go run main.go
+	go run ./cmd/main.go
+
+build:
+	go build ./cmd
 
 postgres:
 	docker run --name tourism-agency-db -p 5434:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres

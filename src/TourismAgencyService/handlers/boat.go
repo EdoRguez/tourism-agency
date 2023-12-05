@@ -8,9 +8,10 @@ import (
 
 	db "github.com/EdoRguez/tourism-agency/TourismAgencyService/db/sqlc"
 	repo "github.com/EdoRguez/tourism-agency/TourismAgencyService/internal/respository"
+	repository "github.com/EdoRguez/tourism-agency/TourismAgencyService/internal/respository"
 )
 
-type Boat struct {
+type BoatHandler struct {
 	Repo *repo.BoatRepo
 }
 
@@ -36,7 +37,13 @@ type BoatResponse struct {
 	CreatedAt     time.Time `json:"created_At"`
 }
 
-func (boat *Boat) CreateBoat(w http.ResponseWriter, r *http.Request) {
+func NewBoatHandler(sql *db.SQLStorage) *BoatHandler {
+	return &BoatHandler{
+		Repo: repository.NewBoatRepo(sql),
+	}
+}
+
+func (handler *BoatHandler) CreateBoat(w http.ResponseWriter, r *http.Request) {
 	var createBoatReq CreateBoatRequest
 	var boatRes BoatResponse
 
@@ -55,7 +62,7 @@ func (boat *Boat) CreateBoat(w http.ResponseWriter, r *http.Request) {
 		IDDestination: createBoatReq.IDDestination,
 	}
 
-	b, err := boat.Repo.CreateBoat(r.Context(), createBoatParams)
+	b, err := handler.Repo.CreateBoat(r.Context(), createBoatParams)
 	if err != nil {
 		http.Error(w, "There is an error", http.StatusInternalServerError)
 		return

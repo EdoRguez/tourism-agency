@@ -35,7 +35,7 @@ func run(conf config.Config) {
 	}
 
 	storage := db.NewStorage(conn)
-	server := NewServer(storage)
+	server := NewServer(conf, storage)
 
 	err = server.Start(conf.HTTPServerAddress)
 	if err != nil {
