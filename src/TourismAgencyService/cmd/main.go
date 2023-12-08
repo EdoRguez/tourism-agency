@@ -8,6 +8,7 @@ import (
 
 	"github.com/EdoRguez/tourism-agency/TourismAgencyService/config"
 	db "github.com/EdoRguez/tourism-agency/TourismAgencyService/db/sqlc"
+	_ "github.com/lib/pq"
 )
 
 func main() {
@@ -17,7 +18,7 @@ func main() {
 	}()
 
 	// load config
-	env, err := config.LoadConfig("../.")
+	env, err := config.LoadConfig(".")
 	if err != nil {
 		fmt.Printf("error: %v", err)
 		exitCode = 1
