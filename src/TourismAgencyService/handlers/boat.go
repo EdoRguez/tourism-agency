@@ -4,15 +4,21 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"strconv"
 	"time"
 
 	db "github.com/EdoRguez/tourism-agency/TourismAgencyService/db/sqlc"
 	repo "github.com/EdoRguez/tourism-agency/TourismAgencyService/internal/respository"
-	repository "github.com/EdoRguez/tourism-agency/TourismAgencyService/internal/respository"
 )
 
 type BoatHandler struct {
 	Repo *repo.BoatRepo
+}
+
+func NewBoatHandler(sql *db.SQLStorage) *BoatHandler {
+	return &BoatHandler{
+		Repo: repo.NewBoatRepo(sql),
+	}
 }
 
 type CreateBoatRequest struct {
@@ -35,12 +41,6 @@ type BoatResponse struct {
 	IDBoatType    int32     `json:"id_boat_type"`
 	IDDestination int32     `json:"id_destination"`
 	CreatedAt     time.Time `json:"created_At"`
-}
-
-func NewBoatHandler(sql *db.SQLStorage) *BoatHandler {
-	return &BoatHandler{
-		Repo: repository.NewBoatRepo(sql),
-	}
 }
 
 func (handler *BoatHandler) CreateBoat(w http.ResponseWriter, r *http.Request) {
@@ -77,6 +77,58 @@ func (handler *BoatHandler) CreateBoat(w http.ResponseWriter, r *http.Request) {
 		BasePrice:     b.BasePrice,
 		IDBoatType:    b.IDBoatType,
 		IDDestination: b.IDDestination,
+	}
+
+	res, err := json.Marshal(boatRes)
+	if err != nil {
+		fmt.Println("failed to marshal:", err)
+		w.WriteHeader(http.StatusInternalServerError)
+		return
+	}
+
+	w.WriteHeader(http.StatusCreated)
+	w.Write(res)
+}
+
+func (handler *BoatHandler) GetAllBoats(w http.ResponseWriter, r *http.Request) {
+	var boatRes []BoatResponse
+	var limit int32 = 10
+	var offset int32 = 0
+
+	i, err := strconv.ParseInt(r.URL.Query().Get("limit"), 10, 64)
+	if err == nil {
+		limit = int32(i)
+	}
+
+	i, err = strconv.ParseInt(r.URL.Query().Get("offset"), 10, 64)
+	if err == nil {
+		offset = int32(i)
+	}
+
+	getAllBoatsParams := db.GetAllBoatsParams{
+		Limit:  limit,
+		Offset: offset,
+	}
+
+	boats, err := handler.Repo.GetAllBoats(r.Context(), getAllBoatsParams)
+	if err != nil {
+		http.Error(w, "There is an error", http.StatusInternalServerError)
+		return
+	}
+
+	for _, b := range boats {
+		fmt.Println(b.Name)
+
+		boatRes = append(boatRes, BoatResponse{
+			ID:            b.ID,
+			Name:          b.Name,
+			Description:   b.Description,
+			NumberPeople:  b.NumberPeople,
+			MainImageUrl:  b.MainImageUrl,
+			BasePrice:     b.BasePrice,
+			IDBoatType:    b.IDBoatType,
+			IDDestination: b.IDDestination,
+		})
 	}
 
 	res, err := json.Marshal(boatRes)

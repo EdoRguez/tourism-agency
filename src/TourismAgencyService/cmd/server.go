@@ -66,17 +66,17 @@ func (s *Server) Start(address string) error {
 
 func loadRoutes(router *mux.Router, storage *db.SQLStorage) {
 	baseRoute := router.PathPrefix("/api").Subrouter()
-	loadOrderRoutes(baseRoute, storage)
+	loadBoatRoutes(baseRoute, storage)
 }
 
-func loadOrderRoutes(router *mux.Router, storage *db.SQLStorage) {
+func loadBoatRoutes(router *mux.Router, storage *db.SQLStorage) {
 	handler := handlers.NewBoatHandler(storage)
 
-	baseRoute := router.PathPrefix("/order").Subrouter()
+	baseRoute := router.PathPrefix("/boat").Subrouter()
 
-	// getRouter := baseRoute.Methods(http.MethodGet).Subrouter()
-	// getRouter.HandleFunc("/", ph.GetProducts)
+	getRouter := baseRoute.Methods(http.MethodGet).Subrouter()
+	getRouter.HandleFunc("", handler.GetAllBoats)
 
 	postRouter := baseRoute.Methods(http.MethodPost).Subrouter()
-	postRouter.HandleFunc("/", handler.CreateBoat)
+	postRouter.HandleFunc("", handler.CreateBoat)
 }

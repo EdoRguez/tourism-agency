@@ -32,3 +32,20 @@ func (boatRepo *BoatRepo) CreateBoat(ctx context.Context, arg db.CreateBoatParam
 
 	return result, err
 }
+
+func (boatRepo *BoatRepo) GetAllBoats(ctx context.Context, arg db.GetAllBoatsParams) ([]db.Boat, error) {
+	var result []db.Boat
+
+	err := boatRepo.SQLStorage.ExecTx(ctx, func(q *db.Queries) error {
+		var err error
+
+		result, err = q.GetAllBoats(ctx, arg)
+		if err != nil {
+			return err
+		}
+
+		return err
+	})
+
+	return result, err
+}
