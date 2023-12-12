@@ -1,6 +1,7 @@
 package handlers
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"net/http"
@@ -9,6 +10,7 @@ import (
 
 	db "github.com/EdoRguez/tourism-agency/TourismAgencyService/db/sqlc"
 	repo "github.com/EdoRguez/tourism-agency/TourismAgencyService/internal/respository"
+	"github.com/go-playground/validator"
 )
 
 type BoatHandler struct {
@@ -22,11 +24,11 @@ func NewBoatHandler(sql *db.SQLStorage) *BoatHandler {
 }
 
 type CreateBoatRequest struct {
-	Name          string `json:"name"`
-	Description   string `json:"description"`
-	NumberPeople  int16  `json:"number_people"`
-	MainImageUrl  string `json:"main_image_url"`
-	BasePrice     string `json:"base_price"`
+	Name          string `json:"name" validate:"required,max=50"`
+	Description   string `json:"description" validate:"required,max=200"`
+	NumberPeople  int16  `json:"number_people" validate:"required,max=500"`
+	MainImageUrl  string `json:"main_image_url" validate:"required"`
+	BasePrice     string `json:"base_price" validate:"required"`
 	IDBoatType    int32  `json:"id_boat_type"`
 	IDDestination int32  `json:"id_destination"`
 }
@@ -117,8 +119,6 @@ func (handler *BoatHandler) GetAllBoats(w http.ResponseWriter, r *http.Request) 
 	}
 
 	for _, b := range boats {
-		fmt.Println(b.Name)
-
 		boatRes = append(boatRes, BoatResponse{
 			ID:            b.ID,
 			Name:          b.Name,
@@ -140,4 +140,29 @@ func (handler *BoatHandler) GetAllBoats(w http.ResponseWriter, r *http.Request) 
 
 	w.WriteHeader(http.StatusCreated)
 	w.Write(res)
+}
+
+func (handler *BoatHandler) MiddlewareValidateCreateBoat(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		var createBoatReq CreateBoatRequest
+		type KeyBoat struct{}
+
+		if err := json.NewDecoder(r.Body).Decode(&createBoatReq); err != nil {
+			w.WriteHeader(http.StatusBadRequest)
+			return
+		}
+
+		// Validate the boat
+		validate := validator.New()
+
+		if err := validate.Struct(createBoatReq); err != nil {
+			http.Error(w, fmt.Sprintf("Error validating boat: %s", err), http.StatusBadRequest)
+			return
+		}
+
+		ctx := context.WithValue(r.Context(), KeyBoat{}, createBoatReq)
+		req := r.WithContext(ctx)
+
+		next.ServeHTTP(w, req)
+	})
 }

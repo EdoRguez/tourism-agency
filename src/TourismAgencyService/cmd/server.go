@@ -72,11 +72,12 @@ func loadRoutes(router *mux.Router, storage *db.SQLStorage) {
 func loadBoatRoutes(router *mux.Router, storage *db.SQLStorage) {
 	handler := handlers.NewBoatHandler(storage)
 
-	baseRoute := router.PathPrefix("/boat").Subrouter()
+	baseRoute := router.PathPrefix("/boats").Subrouter()
 
 	getRouter := baseRoute.Methods(http.MethodGet).Subrouter()
 	getRouter.HandleFunc("", handler.GetAllBoats)
 
 	postRouter := baseRoute.Methods(http.MethodPost).Subrouter()
 	postRouter.HandleFunc("", handler.CreateBoat)
+	postRouter.Use(handler.MiddlewareValidateCreateBoat)
 }

@@ -19,5 +19,5 @@ CREATE TABLE boats (
     "base_price" DECIMAL(16,2) NOT NULL,
     "id_boat_type" INT NOT NULL REFERENCES "boat_types"("id"),
     "id_destination" INT NOT NULL REFERENCES "destinations"("id"),
-    "created_At" TIMESTAMPTZ NOT NULL DEFAULT (now())
+    "created_at" TIMESTAMPTZ NOT NULL DEFAULT (now())
 );
