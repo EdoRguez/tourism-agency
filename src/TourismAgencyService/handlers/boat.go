@@ -10,6 +10,7 @@ import (
 
 	db "github.com/EdoRguez/tourism-agency/TourismAgencyService/db/sqlc"
 	repo "github.com/EdoRguez/tourism-agency/TourismAgencyService/internal/respository"
+	"github.com/EdoRguez/tourism-agency/TourismAgencyService/util"
 	"github.com/go-playground/validator"
 )
 
@@ -152,11 +153,11 @@ func (handler *BoatHandler) MiddlewareValidateCreateBoat(next http.Handler) http
 			return
 		}
 
-		// Validate the boat
 		validate := validator.New()
 
 		if err := validate.Struct(createBoatReq); err != nil {
-			http.Error(w, fmt.Sprintf("Error validating boat: %s", err), http.StatusBadRequest)
+			errorsJson := util.GetHandlerErrorsJson(err)
+			http.Error(w, string(errorsJson), http.StatusBadRequest)
 			return
 		}
 
