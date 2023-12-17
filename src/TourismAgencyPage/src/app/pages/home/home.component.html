@@ -8,13 +8,13 @@
     <ng-template ngbSlide>
         <div class="picsum-img-wrapper">
             <div
-                [ngStyle]="{ 'background-image': 'url(' + 'assets/images/morrocoy_3.jpg' + ')' }"
+                [ngStyle]="{ 'background-image': 'url(' + 'assets/images/morrocoy_5.JPG' + ')' }"
                 class="home-carousel-image"
             >
                 <div class="image-gradient"></div>
             </div>
         </div>
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption">
             <h3>Selecciona Tu Plan</h3>
             <p>Contamos con múltiples planes que se adaptan a tus necesidades</p>
             <div class="d-flex justify-content-center">
@@ -22,7 +22,7 @@
                 <button class="btn-carousel mx-2">Pareja</button>
                 <button class="btn-carousel">Amigos</button>
             </div>
-        </div>
+        </div> -->
     </ng-template>
     <ng-template ngbSlide *ngFor="let data of carouselData">
         <div class="picsum-img-wrapper">
@@ -33,11 +33,11 @@
                 <div class="image-gradient"></div>
             </div>
         </div>
-        <div class="carousel-caption">
+        <!-- <div class="carousel-caption">
             <h3>{{ data.title }}</h3>
             <p>{{ data.description }}</p>
             <button class="btn-carousel">Saber Más</button>
-        </div>
+        </div> -->
     </ng-template>
 </ngb-carousel>
 
@@ -291,3 +291,23 @@ En el Marketplace Viaja Venezuela el turista que utiliza nuestra plataforma para
     </div>
 </div>
 
+<img src="assets/images/wave.png" style="width: 100vw;">
+<div class="container-fluid wave-box">
+    <div class="row">
+        <div class="col-12 col-sm-4">
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="assets/images/turtle.png">
+            </div>
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="assets/images/wave_logo.png">
+            </div>
+        </div>
+        <div class="col-12 col-sm-4" style="padding-right: 0px;">
+            <div class="d-flex justify-content-end">
+                <img src="assets/images/coral.png">
+            </div>
+        </div>
+    </div>
+</div>
