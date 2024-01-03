@@ -20,6 +20,19 @@
     background-position: center;
 }
 
+.carousel-title-box {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+}
+
+.carousel-title {
+    font-family: "Wonderful";
+    color: white;
+    font-size: 48px;
+    line-height: 1.5;
+}
+
 .yate-img {
     background-image: url("../../../assets/images/yate.jpg");
 }
@@ -189,27 +202,27 @@
 }
 
 .surf-img {
-    background-image: url("../../../assets/images/surf.jpg");
+    background-image: url("../../../assets/images/surf.png");
 }
 
 .beach-travel-img {
-    background-image: url("../../../assets/images/beach_travel.png");
+    background-image: url("../../../assets/images/helicopter.jpeg");
 }
 
-.fishing-img {
-    background-image: url("../../../assets/images/fishing.jpg");
+.entertainment-img {
+    background-image: url("../../../assets/images/surf_2.png");
 }
 
-.relax-img {
-    background-image: url("../../../assets/images/relax.jpg");
+.paintball-img {
+    background-image: url("../../../assets/images/paintball.jpg");
 }
 
-.music-img {
-    background-image: url("../../../assets/images/music.jpg");
+.massage-img {
+    background-image: url("../../../assets/images/massage.png");
 }
 
-.volleyball-img {
-    background-image: url("../../../assets/images/volleyball.jpg");
+.sports-img {
+    background-image: url("../../../assets/images/sports.png");
 }
 
 .activities-image-gradient {
@@ -251,7 +264,22 @@
     background: #008BC8;
 }
 
+.contact-title {
+    font-weight: bold;
+    color: white;
+    font-size: 24px;
+}
+
+.contact-text {
+    color: white;
+    font-size: 18px;
+}
+
 @media screen and (max-width: 990px) {
+    .carousel-title {
+        text-align: center;
+    }
+
     .home-carousel-image {
         height: 300px;
         background-size: cover;
